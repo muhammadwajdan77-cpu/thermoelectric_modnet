@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Ag7Bi7Se13
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.90291419
+_cell_length_b   8.90291448
+_cell_length_c   8.90291459
+_cell_angle_alpha   60.00000778
+_cell_angle_beta   60.00000674
+_cell_angle_gamma   60.00000092
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ag7Bi7Se13
+_chemical_formula_sum   'Ag7 Bi7 Se13'
+_cell_volume   498.97828851
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Se  Se0  1  0.00000000  0.00000000  0.00000000  1.0
+  Se  Se1  1  0.00000000  0.00000000  0.33333333  1.0
+  Se  Se2  1  0.00000000  0.00000000  0.66666667  1.0
+  Ag  Ag3  1  0.00000000  0.33333333  0.00000000  1
+  Ag  Ag4  1  0.00000000  0.33333333  0.33333333  1
+  Ag  Ag5  1  0.00000000  0.33333333  0.66666667  1
+  Bi  Bi6  1  0.00000000  0.66666667  0.00000000  1
+  Bi  Bi7  1  0.00000000  0.66666667  0.33333333  1
+  Bi  Bi8  1  0.00000000  0.66666667  0.66666667  1
+  Bi  Bi9  1  0.33333333  0.00000000  0.00000000  1
+  Se  Se10  1  0.33333333  0.00000000  0.33333333  1.0
+  Bi  Bi11  1  0.33333333  0.00000000  0.66666667  1
+  Se  Se12  1  0.33333333  0.33333333  0.00000000  1.0
+  Se  Se13  1  0.33333333  0.33333333  0.33333333  1.0
+  Se  Se14  1  0.33333333  0.33333333  0.66666667  1.0
+  Se  Se15  1  0.33333333  0.66666667  0.00000000  1.0
+  Ag  Ag16  1  0.33333333  0.66666667  0.33333333  1
+  Ag  Ag17  1  0.33333333  0.66666667  0.66666667  1
+  Ag  Ag18  1  0.66666667  0.00000000  0.00000000  1
+  Se  Se19  1  0.66666667  0.00000000  0.33333333  1.0
+  Ag  Ag20  1  0.66666667  0.00000000  0.66666667  1
+  Bi  Bi21  1  0.66666667  0.33333333  0.00000000  1
+  Bi  Bi22  1  0.66666667  0.33333333  0.33333333  1
+  Se  Se23  1  0.66666667  0.33333333  0.66666667  1.0
+  Se  Se24  1  0.66666667  0.66666667  0.00000000  1.0
+  Se  Se25  1  0.66666667  0.66666667  0.33333333  1.0
+  Se  Se26  1  0.66666667  0.66666667  0.66666667  1.0

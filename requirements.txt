@@ -1,0 +1,12 @@
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.5.2
+pymatgen==2024.5.1
+matplotlib==3.10.3
+seaborn==0.13.2
+tensorflow==2.16.2
+modnet==0.1.0
+requests==2.32.3
+openpyxl==3.1.5
+tqdm==4.4.0
+scipy==1.13.0

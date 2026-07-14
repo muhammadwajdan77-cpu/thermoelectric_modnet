@@ -1,0 +1,9 @@
+[submodule "ProtoCSP"]
+	path = ProtoCSP
+	url = https://github.com/rogeriog/ProtoCSP
+[submodule "MatterVial"]
+	path = MatterVial
+	url = https://github.com/rogeriog/MatterVial
+[submodule "sysTEm_dataset"]
+	path = sysTEm_dataset
+	url = https://github.com/tankylz/sysTEm_dataset

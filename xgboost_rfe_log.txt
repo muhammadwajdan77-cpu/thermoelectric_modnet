@@ -1,0 +1,185 @@
+nohup: ignoring input
+
+STEP 1 - BUILD MASTER DATASET
+============================================================
+  master rows after zT>0 and valid formula: 7594
+
+STEP 2 - LOAD MATMINER ANCHOR
+============================================================
+  Matminer features shape: (7594, 133)
+  Matminer target sample: [0.3929, 0.47641, 0.62685]
+
+STEP 3 - LOAD ROOST FEATURES
+============================================================
+  WARNING: ROOST rows 8237 != master rows 7594; aligning by position on first 7594 rows
+  ROOST features shape: (7594, 128)
+
+STEP 4 - LOAD L-OFM FEATURES
+============================================================
+  matched l-OFM rows: 6672 / 7594
+
+STEP 4 - LOAD MVL FEATURES
+============================================================
+  matched MVL rows: 6672 / 7594
+
+STEP 5 - BUILD MEGA FEATURE MATRIX
+============================================================
+  combined raw shape: (7594, 737)
+  removing constant columns: 27
+  final feature matrix shape: (7594, 710)
+
+STEP 6 - XGBOOST RFE FEATURE SELECTION
+============================================================
+  selected 50 features:
+    MagpieData range Number
+    MagpieData range MendeleevNumber
+    MagpieData range AtomicWeight
+    MagpieData maximum MeltingT
+    MagpieData mean Row
+    MagpieData maximum CovalentRadius
+    MagpieData range CovalentRadius
+    MagpieData avg_dev CovalentRadius
+    MagpieData mode CovalentRadius
+    MagpieData minimum Electronegativity
+    MagpieData range Electronegativity
+    MagpieData avg_dev Electronegativity
+    MagpieData mean NsValence
+    MagpieData range NpValence
+    MagpieData mean NdValence
+    MagpieData mean NpUnfilled
+    MagpieData range NUnfilled
+    MagpieData maximum GSvolume_pa
+    MagpieData mean GSbandgap
+    MagpieData minimum SpaceGroupNumber
+    MagpieData range SpaceGroupNumber
+    Temperature_K
+    MEGNet_OFMEncoded_v1_48
+    MEGNet_OFMEncoded_v1_53
+    MEGNet_OFMEncoded_v1_57
+    MEGNet_OFMEncoded_v1_81
+    MEGNet_OFMEncoded_v1_133
+    MEGNet_OFMEncoded_v1_172
+    MVL32_Eform_MP_2019_26
+    MVL32_Efermi_MP_2019_1
+    MVL32_Efermi_MP_2019_14
+    MVL32_Efermi_MP_2019_24
+    MVL32_Bandgap_classifier_MP_2018_15
+    MVL32_Bandgap_classifier_MP_2018_21
+    MVL32_Bandgap_classifier_MP_2018_25
+    MVL32_Bandgap_classifier_MP_2018_32
+    MVL32_Bandgap_MP_2018_9
+    MVL32_Bandgap_MP_2018_10
+    MVL32_logK_MP_2019_10
+    MVL32_logK_MP_2019_19
+    MVL32_logK_MP_2019_21
+    MVL32_logG_MP_2019_7
+    MVL32_logG_MP_2019_28
+    MVL32_logG_MP_2019_30
+    MVL16_Efermi_MP_2019_3
+    MVL16_Efermi_MP_2019_6
+    MVL16_Efermi_MP_2019_9
+    MVL16_Bandgap_classifier_MP_2018_5
+    MVL16_Bandgap_classifier_MP_2018_16
+    MVL16_logK_MP_2019_9
+
+STEP 7 - TRAIN MODNET ON RFE-SELECTED FEATURES
+============================================================
+
+  Fold 1/5 complete
+2026-06-19 11:30:29,263 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+2026-06-19 11:30:29,289 - modnet - INFO - Multiprocessing on 1 workers.
+2026-06-19 11:30:29,290 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:01<01:03,  1.30s/it]100%|██████████| 50/50 [00:01<00:00, 38.03it/s]
+2026-06-19 11:30:30,616 - modnet - INFO - Computing cross NMI between all features...
+  0%|          | 0/1225 [00:00<?, ?it/s]  0%|          | 1/1225 [00:02<59:03,  2.89s/it]  8%|▊         | 101/1225 [00:05<00:54, 20.59it/s] 16%|█▋        | 201/1225 [00:08<00:35, 28.56it/s] 25%|██▍       | 301/1225 [00:10<00:28, 32.85it/s] 33%|███▎      | 401/1225 [00:13<00:23, 34.44it/s] 41%|████      | 501/1225 [00:16<00:21, 33.99it/s] 49%|████▉     | 601/1225 [00:19<00:17, 35.44it/s] 57%|█████▋    | 701/1225 [00:21<00:14, 36.14it/s] 65%|██████▌   | 801/1225 [00:24<00:11, 37.70it/s] 74%|███████▎  | 901/1225 [00:26<00:08, 39.39it/s] 82%|████████▏ | 1001/1225 [00:28<00:05, 40.09it/s] 90%|████████▉ | 1101/1225 [00:31<00:03, 39.90it/s] 98%|█████████▊| 1201/1225 [00:32<00:00, 50.91it/s]100%|██████████| 1225/1225 [00:32<00:00, 38.17it/s]
+2026-06-19 11:31:02,742 - modnet - INFO - Starting target 1/1: ZT ...
+2026-06-19 11:31:02,742 - modnet - INFO - Computing mutual information between features and target...
+2026-06-19 11:31:06,483 - modnet - INFO - Computing optimal features...
+2026-06-19 11:31:07,209 - modnet - INFO - Done with target 1/1: ZT.
+2026-06-19 11:31:07,209 - modnet - INFO - Merging all features...
+2026-06-19 11:31:07,209 - modnet - INFO - Done.
+2026-06-19 11:31:37,170 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+ 1/48 [..............................] - ETA: 3s48/48 [==============================] - 0s 1ms/step
+    MAE=0.1105  RMSE=0.2081  R²=0.7746
+
+  Fold 2/5 complete
+2026-06-19 11:31:38,221 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+2026-06-19 11:31:38,249 - modnet - INFO - Multiprocessing on 1 workers.
+2026-06-19 11:31:38,250 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:02<01:53,  2.33s/it]100%|██████████| 50/50 [00:02<00:00, 21.37it/s]
+2026-06-19 11:31:40,601 - modnet - INFO - Computing cross NMI between all features...
+  0%|          | 0/1225 [00:00<?, ?it/s]  0%|          | 1/1225 [00:03<1:02:04,  3.04s/it]  8%|▊         | 101/1225 [00:06<01:01, 18.41it/s] 16%|█▋        | 201/1225 [00:09<00:44, 23.26it/s] 25%|██▍       | 301/1225 [00:13<00:37, 24.70it/s] 33%|███▎      | 401/1225 [00:19<00:38, 21.27it/s] 41%|████      | 501/1225 [00:25<00:36, 19.78it/s] 49%|████▉     | 601/1225 [00:28<00:28, 21.71it/s] 57%|█████▋    | 701/1225 [00:32<00:22, 23.47it/s] 65%|██████▌   | 801/1225 [00:35<00:15, 26.54it/s] 74%|███████▎  | 901/1225 [00:37<00:10, 29.60it/s] 82%|████████▏ | 1001/1225 [00:40<00:06, 32.22it/s] 90%|████████▉ | 1101/1225 [00:42<00:03, 34.43it/s] 98%|█████████▊| 1201/1225 [00:43<00:00, 45.41it/s]100%|██████████| 1225/1225 [00:43<00:00, 28.44it/s]
+2026-06-19 11:32:23,715 - modnet - INFO - Starting target 1/1: ZT ...
+2026-06-19 11:32:23,715 - modnet - INFO - Computing mutual information between features and target...
+2026-06-19 11:32:27,353 - modnet - INFO - Computing optimal features...
+2026-06-19 11:32:28,038 - modnet - INFO - Done with target 1/1: ZT.
+2026-06-19 11:32:28,038 - modnet - INFO - Merging all features...
+2026-06-19 11:32:28,038 - modnet - INFO - Done.
+2026-06-19 11:32:59,968 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+ 1/48 [..............................] - ETA: 2s48/48 [==============================] - 0s 997us/step
+    MAE=0.1071  RMSE=0.1873  R²=0.8060
+
+  Fold 3/5 complete
+2026-06-19 11:33:00,541 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+2026-06-19 11:33:00,569 - modnet - INFO - Multiprocessing on 1 workers.
+2026-06-19 11:33:00,570 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:02<01:53,  2.33s/it]100%|██████████| 50/50 [00:02<00:00, 21.30it/s]
+2026-06-19 11:33:02,931 - modnet - INFO - Computing cross NMI between all features...
+  0%|          | 0/1225 [00:00<?, ?it/s]  0%|          | 1/1225 [00:06<2:07:27,  6.25s/it]  8%|▊         | 101/1225 [00:12<01:58,  9.46it/s] 16%|█▋        | 201/1225 [00:18<01:18, 13.01it/s] 25%|██▍       | 301/1225 [00:22<00:56, 16.46it/s] 33%|███▎      | 401/1225 [00:25<00:42, 19.57it/s] 41%|████      | 501/1225 [00:30<00:35, 20.45it/s] 49%|████▉     | 601/1225 [00:34<00:29, 21.33it/s] 57%|█████▋    | 701/1225 [00:38<00:23, 22.48it/s] 65%|██████▌   | 801/1225 [00:42<00:17, 24.44it/s] 74%|███████▎  | 901/1225 [00:44<00:11, 27.03it/s] 82%|████████▏ | 1001/1225 [00:47<00:07, 30.17it/s] 90%|████████▉ | 1101/1225 [00:49<00:03, 32.52it/s] 98%|█████████▊| 1201/1225 [00:50<00:00, 43.32it/s]100%|██████████| 1225/1225 [00:50<00:00, 24.30it/s]
+2026-06-19 11:33:53,388 - modnet - INFO - Starting target 1/1: ZT ...
+2026-06-19 11:33:53,389 - modnet - INFO - Computing mutual information between features and target...
+2026-06-19 11:33:56,998 - modnet - INFO - Computing optimal features...
+2026-06-19 11:33:57,623 - modnet - INFO - Done with target 1/1: ZT.
+2026-06-19 11:33:57,623 - modnet - INFO - Merging all features...
+2026-06-19 11:33:57,624 - modnet - INFO - Done.
+2026-06-19 11:34:27,824 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+ 1/48 [..............................] - ETA: 1s48/48 [==============================] - 0s 1ms/step
+    MAE=0.1126  RMSE=0.2000  R²=0.7621
+
+  Fold 4/5 complete
+2026-06-19 11:34:28,392 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+2026-06-19 11:34:28,416 - modnet - INFO - Multiprocessing on 1 workers.
+2026-06-19 11:34:28,416 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:01<01:01,  1.26s/it]100%|██████████| 50/50 [00:01<00:00, 39.24it/s]
+2026-06-19 11:34:29,696 - modnet - INFO - Computing cross NMI between all features...
+  0%|          | 0/1225 [00:00<?, ?it/s]  0%|          | 1/1225 [00:02<51:02,  2.50s/it]  8%|▊         | 101/1225 [00:05<00:48, 23.00it/s] 16%|█▋        | 201/1225 [00:07<00:34, 30.04it/s] 25%|██▍       | 301/1225 [00:10<00:27, 33.85it/s] 33%|███▎      | 401/1225 [00:13<00:25, 32.85it/s] 41%|████      | 501/1225 [00:16<00:23, 31.31it/s] 49%|████▉     | 601/1225 [00:19<00:19, 32.38it/s] 57%|█████▋    | 701/1225 [00:23<00:17, 29.22it/s] 65%|██████▌   | 801/1225 [00:26<00:13, 30.82it/s] 74%|███████▎  | 901/1225 [00:29<00:10, 31.53it/s] 82%|████████▏ | 1001/1225 [00:32<00:06, 33.42it/s] 90%|████████▉ | 1101/1225 [00:35<00:03, 33.21it/s] 98%|█████████▊| 1201/1225 [00:36<00:00, 41.80it/s]100%|██████████| 1225/1225 [00:36<00:00, 33.67it/s]
+2026-06-19 11:35:06,110 - modnet - INFO - Starting target 1/1: ZT ...
+2026-06-19 11:35:06,110 - modnet - INFO - Computing mutual information between features and target...
+2026-06-19 11:35:10,495 - modnet - INFO - Computing optimal features...
+2026-06-19 11:35:11,062 - modnet - INFO - Done with target 1/1: ZT.
+2026-06-19 11:35:11,063 - modnet - INFO - Merging all features...
+2026-06-19 11:35:11,063 - modnet - INFO - Done.
+2026-06-19 11:35:42,023 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+ 1/48 [..............................] - ETA: 1s48/48 [==============================] - ETA: 0s48/48 [==============================] - 0s 1ms/step
+    MAE=0.1165  RMSE=0.2030  R²=0.7755
+
+  Fold 5/5 complete
+2026-06-19 11:35:42,588 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+2026-06-19 11:35:42,611 - modnet - INFO - Multiprocessing on 1 workers.
+2026-06-19 11:35:42,612 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:01<01:19,  1.62s/it]100%|██████████| 50/50 [00:01<00:00, 30.76it/s]
+2026-06-19 11:35:44,242 - modnet - INFO - Computing cross NMI between all features...
+  0%|          | 0/1225 [00:00<?, ?it/s]  0%|          | 1/1225 [00:04<1:33:36,  4.59s/it]  8%|▊         | 101/1225 [00:08<01:21, 13.76it/s] 16%|█▋        | 201/1225 [00:12<00:52, 19.33it/s] 25%|██▍       | 301/1225 [00:15<00:40, 22.88it/s] 33%|███▎      | 401/1225 [00:19<00:33, 24.62it/s] 41%|████      | 501/1225 [00:22<00:27, 26.04it/s] 49%|████▉     | 601/1225 [00:26<00:23, 27.03it/s] 57%|█████▋    | 701/1225 [00:29<00:19, 27.41it/s] 65%|██████▌   | 801/1225 [00:33<00:15, 26.53it/s] 74%|███████▎  | 901/1225 [00:36<00:10, 29.77it/s] 82%|████████▏ | 1001/1225 [00:38<00:06, 32.99it/s] 90%|████████▉ | 1101/1225 [00:42<00:04, 30.15it/s] 98%|█████████▊| 1201/1225 [00:43<00:00, 39.11it/s]100%|██████████| 1225/1225 [00:43<00:00, 28.24it/s]
+2026-06-19 11:36:27,654 - modnet - INFO - Starting target 1/1: ZT ...
+2026-06-19 11:36:27,655 - modnet - INFO - Computing mutual information between features and target...
+2026-06-19 11:36:32,218 - modnet - INFO - Computing optimal features...
+2026-06-19 11:36:32,929 - modnet - INFO - Done with target 1/1: ZT.
+2026-06-19 11:36:32,929 - modnet - INFO - Merging all features...
+2026-06-19 11:36:32,930 - modnet - INFO - Done.
+2026-06-19 11:37:10,153 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+ 1/48 [..............................] - ETA: 11s45/48 [===========================>..] - ETA: 0s 48/48 [==============================] - 0s 1ms/step
+    MAE=0.0982  RMSE=0.1684  R²=0.8208
+
+============================================================
+CV SUMMARY
+  MAE:  0.1090 ± 0.0062
+  RMSE: 0.1934 ± 0.0142
+  R²:   0.7878 ± 0.0219
+
+Saved parity plot: /home/wajdan/Documents/ZT/thermoelectric_modnet/results/figures/parity_plot_xgboost_rfe.png
+
+STEP 8 - UPDATE FINAL RESULTS
+============================================================
+Updated /home/wajdan/Documents/ZT/thermoelectric_modnet/results/FINAL_RESULTS_FIXED.csv
+
+ANALYSIS COMPLETE

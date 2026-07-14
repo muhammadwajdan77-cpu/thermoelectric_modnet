@@ -1,0 +1,4 @@
+comparison,t_statistic,p_value,mean_diff,significant
+Matminer vs CrabNet+Temp,-1.1625,0.3097,-0.0104,False
+Matminer vs Hybrid,-6.5759,0.0028,-0.0254,True
+CrabNet+Temp vs Hybrid,-1.2915,0.2661,-0.015,False

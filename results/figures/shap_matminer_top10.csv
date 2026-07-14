@@ -1,0 +1,11 @@
+feature,mean_abs_shap
+Temperature_K,0.1720600553201171
+MagpieData avg_dev Electronegativity,0.05243013325806881
+MagpieData mode CovalentRadius,0.05236358901903873
+MagpieData avg_dev CovalentRadius,0.030536544324335786
+MagpieData avg_dev MeltingT,0.02610436137006251
+MagpieData range Number,0.023326249946322708
+MagpieData avg_dev MendeleevNumber,0.021125493082088075
+MagpieData maximum CovalentRadius,0.020524265895489634
+MagpieData range Electronegativity,0.018640503806638495
+MagpieData mean NdValence,0.018168501783595758

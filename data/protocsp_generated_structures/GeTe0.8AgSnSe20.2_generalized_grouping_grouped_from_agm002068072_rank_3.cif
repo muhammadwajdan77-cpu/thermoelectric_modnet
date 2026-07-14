@@ -1,0 +1,50 @@
+# generated using pymatgen
+data_AgSnGe4(Te2Se)2
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   28.67855298
+_cell_length_b   4.77975883
+_cell_length_c   6.13740271
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   119.99999995
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   AgSnGe4(Te2Se)2
+_chemical_formula_sum   'Ag2 Sn2 Ge8 Te8 Se4'
+_cell_volume   728.58205628
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ag  Ag0  1  0.05555500  0.66667000  0.25000000  1
+  Ag  Ag1  1  0.22222167  0.66667000  0.25000000  1
+  Ge  Ge2  1  0.38888833  0.66667000  0.25000000  1
+  Ge  Ge3  1  0.55555500  0.66667000  0.25000000  1
+  Ge  Ge4  1  0.72222167  0.66667000  0.25000000  1
+  Ge  Ge5  1  0.88888833  0.66667000  0.25000000  1
+  Ge  Ge6  1  0.11111000  0.33333000  0.75000000  1
+  Ge  Ge7  1  0.27777667  0.33333000  0.75000000  1
+  Ge  Ge8  1  0.44444333  0.33333000  0.75000000  1
+  Ge  Ge9  1  0.61111000  0.33333000  0.75000000  1
+  Sn  Sn10  1  0.77777667  0.33333000  0.75000000  1
+  Sn  Sn11  1  0.94444333  0.33333000  0.75000000  1
+  Se  Se12  1  0.00000000  0.00000000  0.00000000  1
+  Se  Se13  1  0.16666667  0.00000000  0.00000000  1
+  Se  Se14  1  0.33333333  0.00000000  0.00000000  1
+  Se  Se15  1  0.50000000  0.00000000  0.00000000  1
+  Te  Te16  1  0.66666667  0.00000000  0.00000000  1
+  Te  Te17  1  0.83333333  0.00000000  0.00000000  1
+  Te  Te18  1  0.00000000  0.00000000  0.50000000  1
+  Te  Te19  1  0.16666667  0.00000000  0.50000000  1
+  Te  Te20  1  0.33333333  0.00000000  0.50000000  1
+  Te  Te21  1  0.50000000  0.00000000  0.50000000  1
+  Te  Te22  1  0.66666667  0.00000000  0.50000000  1
+  Te  Te23  1  0.83333333  0.00000000  0.50000000  1

@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Yb5Zn3Cd8Sb11
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.80869931
+_cell_length_b   9.80869962
+_cell_length_c   9.80869974
+_cell_angle_alpha   60.00000778
+_cell_angle_beta   60.00000674
+_cell_angle_gamma   60.00000092
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Yb5Zn3Cd8Sb11
+_chemical_formula_sum   'Yb5 Zn3 Cd8 Sb11'
+_cell_volume   667.29727176
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Cd  Cd0  1  0.00000000  0.00000000  0.00000000  1
+  Cd  Cd1  1  0.00000000  0.00000000  0.33333333  1
+  Cd  Cd2  1  0.00000000  0.00000000  0.66666667  1
+  Sb  Sb3  1  0.00000000  0.33333333  0.00000000  1.0
+  Sb  Sb4  1  0.00000000  0.33333333  0.33333333  1.0
+  Zn  Zn5  1  0.00000000  0.33333333  0.66666667  1
+  Yb  Yb6  1  0.00000000  0.66666667  0.00000000  1
+  Sb  Sb7  1  0.00000000  0.66666667  0.33333333  1.0
+  Yb  Yb8  1  0.00000000  0.66666667  0.66666667  1
+  Yb  Yb9  1  0.33333333  0.00000000  0.00000000  1
+  Sb  Sb10  1  0.33333333  0.00000000  0.33333333  1.0
+  Sb  Sb11  1  0.33333333  0.00000000  0.66666667  1.0
+  Cd  Cd12  1  0.33333333  0.33333333  0.00000000  1
+  Cd  Cd13  1  0.33333333  0.33333333  0.33333333  1
+  Cd  Cd14  1  0.33333333  0.33333333  0.66666667  1
+  Zn  Zn15  1  0.33333333  0.66666667  0.00000000  1
+  Sb  Sb16  1  0.33333333  0.66666667  0.33333333  1.0
+  Sb  Sb17  1  0.33333333  0.66666667  0.66666667  1.0
+  Sb  Sb18  1  0.66666667  0.00000000  0.00000000  1.0
+  Zn  Zn19  1  0.66666667  0.00000000  0.33333333  1
+  Sb  Sb20  1  0.66666667  0.00000000  0.66666667  1.0
+  Sb  Sb21  1  0.66666667  0.33333333  0.00000000  1.0
+  Yb  Yb22  1  0.66666667  0.33333333  0.33333333  1
+  Yb  Yb23  1  0.66666667  0.33333333  0.66666667  1
+  Cd  Cd24  1  0.66666667  0.66666667  0.00000000  1
+  Sb  Sb25  1  0.66666667  0.66666667  0.33333333  1.0
+  Cd  Cd26  1  0.66666667  0.66666667  0.66666667  1

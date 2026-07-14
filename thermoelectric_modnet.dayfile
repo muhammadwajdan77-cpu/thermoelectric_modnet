@@ -1,0 +1,7 @@
+
+Calculating thermoelectric_modnet in /home/wajdan/Documents/ZT/thermoelectric_modnet
+on wajdan-HP-ZBook-17-G5 with PID 356408
+using WIEN2k_19.1 (Release 25/6/2019) in /home/wajdan/WIEN2k_19.2
+no thermoelectric_modnet.clmsum(_old) file found, which is necessary for lapw0 !
+
+>   stop error

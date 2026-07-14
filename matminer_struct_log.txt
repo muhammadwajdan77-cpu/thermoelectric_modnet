@@ -1,0 +1,21 @@
+nohup: ignoring input
+Found 5708 CIF files
+Loaded 2352 unique compositions
+  Progress: 50/2352 | success=50 | failed=0 | last=0.9s | avg=18.8s | ETA=721.8m
+Failed Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-3241062_rank_3 (Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-3241062_rank_3.cif): Disordered structure support not built yet.
+Failed Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-5473064_rank_2 (Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-5473064_rank_2.cif): Disordered structure support not built yet.
+Failed Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-5757776_rank_1 (Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-5757776_rank_1.cif): Disordered structure support not built yet.
+Failed Ag2Se1.03_generalized_grouping_grouped_from_oqmd-3241062_rank_3 (Ag2Se1.03_generalized_grouping_grouped_from_oqmd-3241062_rank_3.cif): Disordered structure support not built yet.
+  Progress: 100/2352 | success=96 | failed=4 | last=0.5s | avg=26.4s | ETA=990.4m
+Failed Ag2Se1.03_generalized_grouping_grouped_from_oqmd-5473064_rank_2 (Ag2Se1.03_generalized_grouping_grouped_from_oqmd-5473064_rank_2.cif): Disordered structure support not built yet.
+Failed Ag2Se1.03_generalized_grouping_grouped_from_oqmd-5757776_rank_1 (Ag2Se1.03_generalized_grouping_grouped_from_oqmd-5757776_rank_1.cif): Disordered structure support not built yet.
+  Progress: 150/2352 | success=144 | failed=6 | last=1.1s | avg=18.1s | ETA=663.9m
+  Progress: 200/2352 | success=194 | failed=6 | last=97.3s | avg=19.8s | ETA=711.5m
+  Progress: 250/2352 | success=244 | failed=6 | last=1.4s | avg=58.9s | ETA=2062.5m
+  Progress: 300/2352 | success=294 | failed=6 | last=1.4s | avg=54.1s | ETA=1849.3m
+Failed Bi0.06Ge0.91Te_generalized_grouping_grouped_from_agm002068072_rank_3 (Bi0.06Ge0.91Te_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Failed Bi0.06Ge0.91Te_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (Bi0.06Ge0.91Te_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+Failed Bi0.07Ge0.90Te_generalized_grouping_grouped_from_agm002068072_rank_3 (Bi0.07Ge0.90Te_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Failed Bi0.07Ge0.90Te_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (Bi0.07Ge0.90Te_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+  Progress: 350/2352 | success=340 | failed=10 | last=2.9s | avg=49.5s | ETA=1650.6m
+  Progress: 400/2352 | success=390 | failed=10 | last=14.1s | avg=49.5s | ETA=1609.4m

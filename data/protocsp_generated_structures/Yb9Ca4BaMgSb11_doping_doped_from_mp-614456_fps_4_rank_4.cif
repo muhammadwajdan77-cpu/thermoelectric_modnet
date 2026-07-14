@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_BaCa4Yb9MgSb12
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   10.48803814
+_cell_length_b   10.48803848
+_cell_length_c   10.48803861
+_cell_angle_alpha   60.00000778
+_cell_angle_beta   60.00000674
+_cell_angle_gamma   60.00000092
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   BaCa4Yb9MgSb12
+_chemical_formula_sum   'Ba1 Ca4 Yb9 Mg1 Sb12'
+_cell_volume   815.77024418
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Yb  Yb0  1  0.00000000  0.00000000  0.00000000  1
+  Yb  Yb1  1  0.00000000  0.00000000  0.33333333  1
+  Yb  Yb2  1  0.00000000  0.00000000  0.66666667  1
+  Ba  Ba3  1  0.00000000  0.33333333  0.00000000  1
+  Sb  Sb4  1  0.00000000  0.33333333  0.33333333  1.0
+  Sb  Sb5  1  0.00000000  0.33333333  0.66666667  1.0
+  Ca  Ca6  1  0.00000000  0.66666667  0.00000000  1
+  Sb  Sb7  1  0.00000000  0.66666667  0.33333333  1.0
+  Ca  Ca8  1  0.00000000  0.66666667  0.66666667  1
+  Sb  Sb9  1  0.33333333  0.00000000  0.00000000  1.0
+  Ca  Ca10  1  0.33333333  0.00000000  0.33333333  1
+  Sb  Sb11  1  0.33333333  0.00000000  0.66666667  1.0
+  Yb  Yb12  1  0.33333333  0.33333333  0.00000000  1
+  Yb  Yb13  1  0.33333333  0.33333333  0.33333333  1
+  Yb  Yb14  1  0.33333333  0.33333333  0.66666667  1
+  Sb  Sb15  1  0.33333333  0.66666667  0.00000000  1.0
+  Sb  Sb16  1  0.33333333  0.66666667  0.33333333  1.0
+  Sb  Sb17  1  0.33333333  0.66666667  0.66666667  1.0
+  Sb  Sb18  1  0.66666667  0.00000000  0.00000000  1.0
+  Sb  Sb19  1  0.66666667  0.00000000  0.33333333  1.0
+  Sb  Sb20  1  0.66666667  0.00000000  0.66666667  1.0
+  Sb  Sb21  1  0.66666667  0.33333333  0.00000000  1.0
+  Mg  Mg22  1  0.66666667  0.33333333  0.33333333  1
+  Ca  Ca23  1  0.66666667  0.33333333  0.66666667  1
+  Yb  Yb24  1  0.66666667  0.66666667  0.00000000  1
+  Yb  Yb25  1  0.66666667  0.66666667  0.33333333  1
+  Yb  Yb26  1  0.66666667  0.66666667  0.66666667  1

@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Ag7Bi5Sb2Se13
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.83140484
+_cell_length_b   8.83140513
+_cell_length_c   8.83140523
+_cell_angle_alpha   60.00000778
+_cell_angle_beta   60.00000674
+_cell_angle_gamma   60.00000092
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ag7Bi5Sb2Se13
+_chemical_formula_sum   'Ag7 Bi5 Sb2 Se13'
+_cell_volume   487.05103161
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ag  Ag0  1  0.00000000  0.00000000  0.00000000  1
+  Ag  Ag1  1  0.00000000  0.00000000  0.33333333  1
+  Ag  Ag2  1  0.00000000  0.00000000  0.66666667  1
+  Se  Se3  1  0.00000000  0.33333333  0.00000000  1.0
+  Se  Se4  1  0.00000000  0.33333333  0.33333333  1.0
+  Se  Se5  1  0.00000000  0.33333333  0.66666667  1.0
+  Bi  Bi6  1  0.00000000  0.66666667  0.00000000  1
+  Bi  Bi7  1  0.00000000  0.66666667  0.33333333  1
+  Se  Se8  1  0.00000000  0.66666667  0.66666667  1.0
+  Bi  Bi9  1  0.33333333  0.00000000  0.00000000  1
+  Se  Se10  1  0.33333333  0.00000000  0.33333333  1.0
+  Bi  Bi11  1  0.33333333  0.00000000  0.66666667  1
+  Ag  Ag12  1  0.33333333  0.33333333  0.00000000  1
+  Ag  Ag13  1  0.33333333  0.33333333  0.33333333  1
+  Se  Se14  1  0.33333333  0.33333333  0.66666667  1.0
+  Se  Se15  1  0.33333333  0.66666667  0.00000000  1.0
+  Se  Se16  1  0.33333333  0.66666667  0.33333333  1.0
+  Se  Se17  1  0.33333333  0.66666667  0.66666667  1.0
+  Se  Se18  1  0.66666667  0.00000000  0.00000000  1.0
+  Se  Se19  1  0.66666667  0.00000000  0.33333333  1.0
+  Sb  Sb20  1  0.66666667  0.00000000  0.66666667  1
+  Bi  Bi21  1  0.66666667  0.33333333  0.00000000  1
+  Se  Se22  1  0.66666667  0.33333333  0.33333333  1.0
+  Se  Se23  1  0.66666667  0.33333333  0.66666667  1.0
+  Ag  Ag24  1  0.66666667  0.66666667  0.00000000  1
+  Sb  Sb25  1  0.66666667  0.66666667  0.33333333  1
+  Ag  Ag26  1  0.66666667  0.66666667  0.66666667  1

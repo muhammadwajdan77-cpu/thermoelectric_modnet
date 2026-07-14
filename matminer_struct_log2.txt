@@ -1,0 +1,460 @@
+nohup: ignoring input
+Found 5708 CIF files
+Loaded 2352 unique compositions
+
+Testing on first 5 unique structures...
+Processed 5/5 test structures...
+Skipped Ag0.01Sn0.99Se0.65S0.35_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+                                                                  composition  minimum CN_VoronoiNN  maximum CN_VoronoiNN  range CN_VoronoiNN  mean CN_VoronoiNN  avg_dev CN_VoronoiNN  spacegroup_num crystal_system  crystal_system_int  is_centrosymmetric  n_symmetry_ops  density       vpa  packing fraction
+ Ag0.01Cu1.965S0.5Se0.5_generalized_grouping_grouped_from_oqmd-3241062_rank_3              8.000000              9.971818            1.971818           9.314545              0.876364             160       trigonal                   3               False              24 4.738277 21.331376          0.404595
+ Ag0.01Cu1.965S0.5Se0.5_generalized_grouping_grouped_from_oqmd-5473064_rank_2              8.000000              9.971811            1.971811           9.314541              0.876361             160       trigonal                   3               False              24 4.041738 25.007550          0.345118
+ Ag0.01Cu1.965S0.5Se0.5_generalized_grouping_grouped_from_oqmd-5757776_rank_1              9.579430             13.164159            3.584729          10.774342              1.593209             187      hexagonal                   2               False              96 7.266326 13.909915          0.620461
+Ag0.01Sn0.99Se0.65S0.35_generalized_grouping_grouped_from_agm002068072_rank_3              7.804516             10.247050            2.442534           9.025762              1.221239             164       trigonal                   3                True              24 4.925246 30.357586          0.301778
+Test summary: succeeded=4, skipped=1, failed=0, final shape=(4, 14)
+
+Processing full set of unique structures...
+Skipped Ag0.01Sn0.99Se0.65S0.35_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ag0.01Sn0.99Se0.85S0.15_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ag0.01Sn0.99Se0.8S0.2_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ag0.01Sn0.99Se0.9S0.1_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ag0.01Sn0.99Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ag0.02Cr1.98Se3: timeout
+Skipped Ag0.03Cr1.97Se3: timeout
+Skipped Ag0.05Sb0.05Sn0.9S0.05Se0.05Te0.9_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ag0.15Sb0.15Te1.15Ge0.85_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ag0.1Sb0.1Sn0.8S0.1Se0.1Te0.8_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 50/2352 structures...
+Skipped Ag0.97Cr0.99Bi0.01Se2: timeout
+Skipped Ag0.97Cr0.99Sb0.01Se2: timeout
+Skipped Ag0.98Nb0.02BiSe2.0: timeout
+Skipped Ag0.9Cu0.1In5S8: timeout
+Failed Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-3241062_rank_3 (Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-3241062_rank_3.cif): Disordered structure support not built yet.
+Failed Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-5473064_rank_2 (Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-5473064_rank_2.cif): Disordered structure support not built yet.
+Failed Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-5757776_rank_1 (Ag2Se1.0025_generalized_grouping_grouped_from_oqmd-5757776_rank_1.cif): Disordered structure support not built yet.
+Processed 100/2352 structures...
+Failed Ag2Se1.03_generalized_grouping_grouped_from_oqmd-3241062_rank_3 (Ag2Se1.03_generalized_grouping_grouped_from_oqmd-3241062_rank_3.cif): Disordered structure support not built yet.
+Failed Ag2Se1.03_generalized_grouping_grouped_from_oqmd-5473064_rank_2 (Ag2Se1.03_generalized_grouping_grouped_from_oqmd-5473064_rank_2.cif): Disordered structure support not built yet.
+Failed Ag2Se1.03_generalized_grouping_grouped_from_oqmd-5757776_rank_1 (Ag2Se1.03_generalized_grouping_grouped_from_oqmd-5757776_rank_1.cif): Disordered structure support not built yet.
+Processed 150/2352 structures...
+Skipped AgBi0.97Pb0.03Se2.12: timeout
+Skipped AgBi0.98Pb0.02Se2.12: timeout
+Skipped AgBi0.99Pb0.01Se2.12: timeout
+Processed 200/2352 structures...
+Skipped AgSb0.98Cd0.02Te2: timeout
+Skipped AgSb0.99Mn0.01Te2: timeout
+Skipped Al0.005Sb0.1Ge0.895Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Al0.0075Sb0.1Ge0.8925Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Al0.01Ge0.99Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Al0.01Sb0.1Ge0.89Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Al0.02Ge0.98Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Al0.02Zn0.98O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Al0.03Ge0.97Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ba0.03Co4Sb12: timeout
+Skipped Ba0.05Yb0.09Co4Sb12: timeout
+Skipped Ba0.08La0.05Yb0.04Co4Sb12: timeout
+Skipped Ba0.08Yb0.09Co4Sb12: timeout
+Skipped Ba0.09La0.04Yb0.13Co4Sb12: timeout
+Skipped Ba0.09La0.04Yb0.14Co4Sb12: timeout
+Skipped Ba0.10La0.05Yb0.07Co4Sb12: timeout
+Skipped Ba0.11Yb0.03Co4Sb12: timeout
+Skipped Ba0.11Yb0.08Co4Sb12: timeout
+Processed 250/2352 structures...
+Skipped Ba0.97K0.03Zn2As2: timeout
+Skipped Ba0.98K0.02Zn2As2: timeout
+Skipped Ba0.99K0.01Zn2As2: timeout
+Skipped Ba8Ni.32Ga13.63Ge31.71: timeout
+Processed 300/2352 structures...
+Skipped Bi.94Ca.02Pb.02CuSeO: timeout
+Skipped Bi.98Ca.01Pb.01CuSeO: timeout
+Failed Bi0.06Ge0.91Te_generalized_grouping_grouped_from_agm002068072_rank_3 (Bi0.06Ge0.91Te_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Skipped Bi0.06Ge0.91Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Bi0.06Ge0.91Te_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (Bi0.06Ge0.91Te_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+Failed Bi0.07Ge0.90Te_generalized_grouping_grouped_from_agm002068072_rank_3 (Bi0.07Ge0.90Te_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Skipped Bi0.07Ge0.90Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Bi0.07Ge0.90Te_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (Bi0.07Ge0.90Te_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+Skipped Bi0.96Pb0.02Yb0.02CuSeO: timeout
+Skipped Bi0.985Na0.015CuSeO: timeout
+Skipped Bi0.98Pb0.02CuSeO: timeout
+Processed 350/2352 structures...
+Skipped Bi2Te2.38I0.02Se0.6: timeout
+Skipped Bi2Te2.39I0.01Se0.6: timeout
+Skipped Bi2YO4Cu2Se1.95I.05: timeout
+Processed 400/2352 structures...
+Skipped BiSbTe1.5Se1.5.988Ag.012: timeout
+Skipped BiSbTe1.5Se1.5.991Ag.009: timeout
+Skipped BiSbTe1.5Se1.5.994Ag.006: timeout
+Skipped BiSbTe1.5Se1.5.997Ag.003: timeout
+Skipped Ca0.05BaGd1.95NiO5: timeout
+Skipped Ca0.98Bi0.02Mn0.98Nb0.02O3: timeout
+Skipped Ca0.98Gd0.02MnO3: timeout
+Skipped Ca0.98La0.02MnO3: timeout
+Processed 450/2352 structures...
+Skipped Ca2.97Na0.03AlSb3: timeout
+Skipped Ca3Al0.98Zn0.02Sb3: timeout
+Skipped Ca3Al0.99Zn0.01Sb3: timeout
+Skipped Ca3Co3.9Ti0.1O9: timeout
+Skipped Ca4.95Na0.05Al2Sb6: timeout
+Skipped Ca5Al1.9Zn0.1Sb6: timeout
+Skipped Ca5Ga1.95Zn0.05Sb6: timeout
+Skipped Ca5Ga1.9Zn0.1Sb6: timeout
+Skipped Ca5In1.95Zn0.05Sb6: timeout
+Skipped Ca5In1.9Zn0.1Sb6: timeout
+Processed 500/2352 structures...
+Skipped CaMn0.98Nb0.02O3: timeout
+Skipped CaMn0.98Ru0.02O3: timeout
+Processed 550/2352 structures...
+Skipped CoSi0.98Ge0.02_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped CoSi0.995B0.005_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped CrO0.09N0.9_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped CsBi4Te60.9995SbI30.0005: timeout
+Skipped Cu0.001Pb0.999TeMnTe0.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Cu0.002Pb0.998TeMnTe0.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Cu0.003Pb0.997TeMnTe0.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Cu0.004Pb0.996TeMnTe0.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Cu0.005Pb0.995TeMnTe0.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 600/2352 structures...
+Skipped Cu0.97Pb0.03FeO2: timeout
+Skipped Cu0.98Pd0.02FeS2: timeout
+Skipped Cu0.99Pb0.01FeO2: timeout
+Skipped Cu0.99Pd0.01FeS2: timeout
+Processed 650/2352 structures...
+Skipped Cu11.8Gd0.2Sb4S13: timeout
+Skipped Cu11.9Gd0.1Sb4S13: timeout
+Processed 700/2352 structures...
+Skipped Cu2.94Ag0.06SbSe4: timeout
+Processed 750/2352 structures...
+Skipped Cu2ZnSn.95In0.05Se4: timeout
+Skipped Cu2ZnSn0.95Ag0.05Se4: timeout
+Skipped Cu2ZnSn0.98Ag0.02Se4: timeout
+Processed 800/2352 structures...
+Skipped Cu3Sb0.95Ge0.05S4: timeout
+Skipped Cu3Sb0.95Sn0.05Se4: timeout
+Skipped Cu3Sb0.975Ge0.025S4: timeout
+Skipped Cu3Sb0.98Ge0.02S4: timeout
+Skipped Cu3Sb0.98Sn0.02Se4: timeout
+Processed 850/2352 structures...
+Skipped CuCr0.98Mg0.02O2: timeout
+Skipped CuCr0.99Mg0.01O2: timeout
+Skipped CuFe0.98In0.02S2: timeout
+Skipped CuGa0.98Mn0.02Te2: timeout
+Skipped CuGa0.99Mn0.01Te2: timeout
+Skipped CuI0.003Bi2Te3: timeout
+Skipped CuRh0.99Mg0.01O2: timeout
+Skipped Er0.01Bi0.23Sb0.771.99Te3: timeout
+Skipped Er0.02Bi0.23Sb0.771.98Te3: timeout
+Skipped Er0.03Bi0.23Sb0.771.97Te3: timeout
+Processed 900/2352 structures...
+Skipped Fe1.98Sn0.02O3: timeout
+Skipped Fe1.98Ti0.02O3: timeout
+Processed 950/2352 structures...
+Skipped Ge0.55Pb0.45Te0.4Se0.6_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.55Pb0.45Te0.5Se0.5_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.73Bi0.12Sn0.15Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.73Bi0.12Sn0.1Cu0.1Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.74Bi0.12Sn0.1Cu0.08Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.75Bi0.12Sn0.1Cu0.06Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.76Bi0.12Sn0.1Cu0.04Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.78Bi0.12Sn0.1Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.83Bi0.12Sn0.05Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.83In0.05Pb0.12Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1000/2352 structures...
+Skipped Ge0.85In0.05Pb0.1Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.86Bi0.08Sc0.06Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.87Bi0.08Sn0.05Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.87In0.05Pb0.08Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.87Mn0.05Sb0.08Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.88Bi0.06Sc0.06Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.89In0.05Pb0.06Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.91Bi0.04Sn0.05Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.92Sc0.08Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.94Sc0.06Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.95Mn0.05Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.96Mn0.02Sb0.02Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.96Sc0.04Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.98Mn0.01Sb0.01Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.98Mn0.02Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.98Sc0.02Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1050/2352 structures...
+Skipped Ge0.99Mn0.01Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Ge0.99Te_generalized_grouping_grouped_from_agm002068072_rank_3 (Ge0.99Te_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Skipped Ge0.99Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Ge0.99Te_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (Ge0.99Te_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+Skipped Ge0.9Bi0.04Sc0.06Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge0.9Mn0.05Sb0.05Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Ge1.04Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped GeSe0.85Te0.15_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped GeSe0.95Te0.05_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped GeSe0.9Te0.1_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1100/2352 structures...
+Skipped GeTe0.9AgSnSe20.1_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped In0.005Pb0.995Te0.994I0.006_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped In0.005Pb0.995Te0.996I0.004_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped In0.005Pb0.995Te0.998I0.002_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped In0.005Pb0.995Te0.999I0.001_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped In0.015Pb0.985Te0.994I0.006_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped In0.015Pb0.985Te0.996I0.004_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped In0.015Pb0.985Te0.998I0.002_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1150/2352 structures...
+Skipped In0.01Pb0.99Te0.994I0.006_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped In0.01Pb0.99Te0.996I0.004_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped In0.01Pb0.99Te0.998I0.002_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped In0.01Pb0.99Te0.999I0.001_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped In0.05Co4Sb12: timeout
+Skipped In0.1Co4Sb12: timeout
+Skipped In0.55Fe0.05Co3.95Sb11.91Se0.09: timeout
+Skipped In0.55Fe0.05Co3.95Sb11.95Se0.05: timeout
+Skipped In0.5Fe0.1Co3.9Sb12: timeout
+Skipped In1.985Ge0.015O3: timeout
+Skipped In3.96Pb0.04Se3: timeout
+Skipped In3.99Pb0.01Se3: timeout
+Skipped In4Pb0.01Sn0.03Se2.9Cl0.02: timeout
+Skipped In4Pb0.01Sn0.03Se2.9Cl0.04: timeout
+Skipped In4Pb0.01Sn0.03Se2.9Cl0.06: timeout
+Skipped In4Se2.32Cl0.03: timeout
+Skipped In4Se2.67Cl0.03: timeout
+Skipped K0.975Ba0.025GaSb4: timeout
+Skipped K0.985Ba0.015GaSb4: timeout
+Skipped K0.98Ba0.02GaSb4: timeout
+Skipped La0.05Ca2.95Co4O9: timeout
+Skipped La0.1Co4Sb12: timeout
+Processed 1200/2352 structures...
+Skipped La0.98Sr0.02CoO3: timeout
+Skipped La0.99Sr0.01CoO3: timeout
+Skipped La1.95Sr0.05CuO4: timeout
+Skipped Li0.0024Ni0.9976O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1250/2352 structures...
+Failed Li0.0066Ni0.9944O_generalized_grouping_grouped_from_agm002068072_rank_3 (Li0.0066Ni0.9944O_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Skipped Li0.0066Ni0.9944O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Li0.0066Ni0.9944O_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (Li0.0066Ni0.9944O_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+Skipped Li0.0184Ni0.9816O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Li0.01Cu1.85Se_generalized_grouping_grouped_from_oqmd-3241062_rank_3 (Li0.01Cu1.85Se_generalized_grouping_grouped_from_oqmd-3241062_rank_3.cif): Disordered structure support not built yet.
+Failed Li0.01Cu1.85Se_generalized_grouping_grouped_from_oqmd-5473064_rank_2 (Li0.01Cu1.85Se_generalized_grouping_grouped_from_oqmd-5473064_rank_2.cif): Disordered structure support not built yet.
+Skipped Li0.0242Ni0.9758O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped LiCo0.98Ni0.02O2: timeout
+Processed 1300/2352 structures...
+Skipped Mg1.98Ag0.02Zn0.98Sb2: timeout
+Skipped Mg1.98K0.02Zn0.98Sb2: timeout
+Skipped Mg1.98Li0.02Zn0.98Sb2: timeout
+Failed Mg1.9Ca0.1Si_generalized_grouping_grouped_from_oqmd-3241062_rank_3 (Mg1.9Ca0.1Si_generalized_grouping_grouped_from_oqmd-3241062_rank_3.cif): Disordered structure support not built yet.
+Failed Mg1.9Ca0.1Si_generalized_grouping_grouped_from_oqmd-5473064_rank_2 (Mg1.9Ca0.1Si_generalized_grouping_grouped_from_oqmd-5473064_rank_2.cif): Disordered structure support not built yet.
+Failed Mg1.9Ca0.1Si_generalized_grouping_grouped_from_oqmd-5757776_rank_1 (Mg1.9Ca0.1Si_generalized_grouping_grouped_from_oqmd-5757776_rank_1.cif): Disordered structure support not built yet.
+Skipped Mg2.975Na0.025Sb2: timeout
+Skipped Mg2.9875Na0.0125Sb2: timeout
+Skipped Mg2.994Na0.006Sb2: timeout
+Processed 1350/2352 structures...
+Failed Mg2Si0.999Bi0.001_generalized_grouping_grouped_from_oqmd-3241062_rank_3 (Mg2Si0.999Bi0.001_generalized_grouping_grouped_from_oqmd-3241062_rank_3.cif): Disordered structure support not built yet.
+Failed Mg2Si0.999Bi0.001_generalized_grouping_grouped_from_oqmd-5473064_rank_2 (Mg2Si0.999Bi0.001_generalized_grouping_grouped_from_oqmd-5473064_rank_2.cif): Disordered structure support not built yet.
+Skipped Mg3.07Sb1.5Bi0.46Se0.04: timeout
+Skipped Mg3.07Sb1.5Bi0.47Se0.03: timeout
+Skipped Mg3.07Sb1.5Bi0.48Se0.02: timeout
+Skipped Mg3.2Sb1.5Bi0.49Te0.01: timeout
+Skipped Mg3.44Ni0.06SbBi0.96Te0.04: timeout
+Skipped Mg3.45Ni0.05SbBi0.96Te0.04: timeout
+Skipped Mg3.46Ni0.04SbBi0.96Te0.04: timeout
+Skipped Mg3.47Ni0.03SbBi0.96Te0.04: timeout
+Skipped Mg3.485Ni0.015SbBi0.96Te0.04: timeout
+Processed 1400/2352 structures...
+Skipped Mg3.48Ni0.02SbBi0.96Te0.04: timeout
+Skipped Mg3.5Gd0.02Sb2: timeout
+Skipped Mg3.5Gd0.035Sb2: timeout
+Skipped Mg3.5Gd0.03Sb1.97Te0.03: timeout
+Skipped Mg3.5Gd0.03Sb2: timeout
+Skipped Mg3.5Gd0.04Sb1.97Te0.03: timeout
+Skipped Mg3.5Gd0.04Sb2: timeout
+Skipped Mg3.5Ho0.02Sb1.97Te0.03: timeout
+Skipped Mg3.5Ho0.02Sb2: timeout
+Skipped Mg3.5Ho0.03Sb1.97Te0.03: timeout
+Skipped Mg3.5Ho0.03Sb2: timeout
+Skipped Mg3.5Ho0.04Sb1.97Te0.03: timeout
+Skipped Mg3.5Ho0.04Sb2: timeout
+Skipped Mg3.5SbBi0.96Te0.04: timeout
+Processed 1450/2352 structures...
+Failed Na0.01Sn0.985Se_generalized_grouping_grouped_from_agm002068072_rank_3 (Na0.01Sn0.985Se_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Skipped Na0.01Sn0.985Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Na0.01Sn0.985Se_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (Na0.01Sn0.985Se_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+Skipped Na0.02Pb0.98Te0.75Se0.25_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Na0.02Pb0.98Te0.85Se0.15_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Na0.02Pb0.98Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Na0.02Sn0.975Se_generalized_grouping_grouped_from_agm002068072_rank_3 (Na0.02Sn0.975Se_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Skipped Na0.02Sn0.975Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Na0.02Sn0.975Se_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (Na0.02Sn0.975Se_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+Failed Na0.03Sn0.965Se_generalized_grouping_grouped_from_agm002068072_rank_3 (Na0.03Sn0.965Se_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Skipped Na0.03Sn0.965Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Na0.03Sn0.965Se_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (Na0.03Sn0.965Se_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+Skipped Nb0.01Ag0.99BiSe20.8PbS0.2: timeout
+Processed 1500/2352 structures...
+Skipped Nd2Cu0.98Ni0.02O4: timeout
+Skipped Nd2Cu0.98Zn0.02O4: timeout
+Processed 1550/2352 structures...
+Skipped Ni0.02Zn0.98O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.79Sb0.012Sn0.20Se0.50Te0.25S0.25_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.84Sb0.012Sn0.15Se0.50Te0.25S0.25_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.89Sb0.012Sn0.10Se0.50Te0.25S0.25_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.8Yb0.2Te0.15GeTe0.85_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.94Sb0.012Sn0.05Se0.50Te0.25S0.25_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.96Tl0.02Na0.02Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.975Ga0.025Te0.9925ZnTe0.0075_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.975Ga0.025Te0.9950ZnTe0.0050_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.975Ga0.025Te0.9975ZnTe0.0025_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.975Ga0.025Te0.99ZnTe0.01_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.975Ga0.025Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.975Zn0.04Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1600/2352 structures...
+Skipped Pb0.97Tl0.015Na0.015Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.9825Tl0.0075Na0.01Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.985Zn0.03Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.98Tl0.01Na0.01Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.98Zn0.035Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.995Zn0.02Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.99Na0.01Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.99Sb0.012Se0.20Te0.40S0.40_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.99Sb0.012Se0.40Te0.30S0.30_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.99Sb0.012Se0.50Te0.25S0.25_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.99Sb0.012Se0.6Te0.2S0.2_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.99Sb0.012Se0.8Te0.1S0.1_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.99Sb0.012Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.99Sb0.012Te0.50S0.50_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.99Tl0.005Na0.005Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.99Tl0.01Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb0.99Yb0.01Te0.15GeTe0.85_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1650/2352 structures...
+Skipped Pb0.9Yb0.1Te0.15GeTe0.85_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb1.002S0.6Se0.4_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb1.004S0.6Se0.4Cu0.0005_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb1.004S0.6Se0.4Cu0.001_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb1.004S0.6Se0.4Cu0.002_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb1.004S0.6Se0.4Cu0.004_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb1.004S0.6Se0.4Cu0.006_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb1.004S0.6Se0.4_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Pb1.006S0.6Se0.4_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1700/2352 structures...
+Skipped PbTe0.15GeTe0.85_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped PbTe0.94SrTe0.04Na0.02_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped PbTe0.97SrTe0.02Na0.01_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped PbTe0.98Na0.02_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped PbTeMnTe0.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped PbZn0.015Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sb0.05Ge0.95Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sb0.15Ge0.85Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sb0.1Ge0.9Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sb1.82Mn0.03In0.15Te2.98: timeout
+Skipped Sb1.83Mn0.02In0.15Te2.98: timeout
+Processed 1750/2352 structures...
+Skipped Sn.985Na.015Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.87Mn0.1Bi0.03Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.8Ge0.20.85Mn0.15Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.8Ge0.20.88Mn0.12Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.8Ge0.20.91Mn0.09Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.8Ge0.20.94Mn0.06Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.8Ge0.20.97Mn0.03Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.91Mn0.08Bi0.01Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.91Mn0.09Te0.97I0.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.91Mn0.09Te0.98I0.02_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.91Mn0.09Te0.99I0.01_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.91Mn0.09Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.93Pb0.06Zn0.01Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1800/2352 structures...
+Skipped Sn0.95Mn0.05Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.965Pb0.01Cd0.025Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.96Pb0.01Cd0.035Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.96Pb0.03Zn0.01Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.975Pb0.01Cd0.015Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.97Ce0.03Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.97Mn0.03Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.97Pb0.01Cd0.025Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.97Pb0.02Zn0.01Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.985In0.015Te0.85AgCl0.15_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.985In0.015Te0.95AgCl0.05_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.985In0.015Te0.9AgCl0.1_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.985In0.015Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.98Bi0.02Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.98Ce0.02Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.98In0.02Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1850/2352 structures...
+Skipped Sn0.98Pb0.01Zn0.01Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.99Ce0.01Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.99Mn0.01Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn0.9Pb0.09Zn0.01Se_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn1.03Se0.08Te0.92_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn1.03Se0.12Te0.865Br0.015_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn1.03Se0.12Te0.875Br0.005_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn1.03Se0.12Te0.87Br0.01_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn1.03Se0.12Te0.88_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn1.03Se0.15Te0.85_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Sn1.03Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnS0.88Se0.12_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnS0.91Se0.09_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnS0.94Se0.06_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnS0.97Se0.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1900/2352 structures...
+Skipped SnSe0.95_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnSe0.9S0.1_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed SnTe0.84CuSbTe20.16_generalized_grouping_grouped_from_agm002068072_rank_3 (SnTe0.84CuSbTe20.16_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Skipped SnTe0.84CuSbTe20.16_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed SnTe0.84CuSbTe20.16_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (SnTe0.84CuSbTe20.16_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+Skipped SnTe0.86CuSbTe20.14_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnTe0.88CuSbTe20.12_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnTe0.92CuSbTe20.08_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnTe0.94CuSbTe20.06_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnTe0.96CuSbTe20.04_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnTe0.98CuSbTe20.02_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnTe0.9CuSbTe20.1_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped SnTeAgSbSe20.1_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 1950/2352 structures...
+Skipped Sr0.11Ba0.18Co4Sb12.09: timeout
+Skipped Sr0.16Yb0.03Co4Sb11.82: timeout
+Skipped Sr0.83Dy0.03Nd0.14TiO3: timeout
+Processed 2000/2352 structures...
+Skipped SrMn0.98Mo0.02O3: timeout
+Skipped Ti0.01Mg3.19Sb1.5Bi0.49Te0.01: timeout
+Skipped Ti0.03Mg3.17Sb1.5Bi0.49Te0.01: timeout
+Skipped Ti0.07Mg3.13Sb1.3Bi0.49Te0.01: timeout
+Processed 2050/2352 structures...
+Processed 2100/2352 structures...
+Skipped Tl0.01Pb0.99Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Tl0.02Pb0.98Te_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Tl0.1Co4Sb12: timeout
+Skipped W0.99O2.97Co0.02O0.03: timeout
+Processed 2150/2352 structures...
+Skipped Zn0.85Cd0.15Sc0.02O1.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.875Cd0.125Sc0.02O1.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.95Al0.05O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 2200/2352 structures...
+Skipped Zn0.95Cd0.05Sc0.02O1.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.9604Ni0.0196Al0.02O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.96Al0.04O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.97Al0.015Ti0.015O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.97Al0.01Ti0.02O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.97Al0.025Ti0.005O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.97Al0.02Ti0.01O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.97Al0.03O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.98Al0.02O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.9925Al0.0075O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.995Al0.005O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.9975Al0.0025O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.997Dy0.003O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.998Dy0.002O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.999Dy0.001O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.99Al0.01O_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 2250/2352 structures...
+Skipped Zn0.9Cd0.1Sc0.006O1.009_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.9Cd0.1Sc0.01O1.015_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Skipped Zn0.9Cd0.1Sc0.02O1.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Zn0.9Cd0.1Sc0.03O1.045_generalized_grouping_grouped_from_agm002068072_rank_3 (Zn0.9Cd0.1Sc0.03O1.045_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Skipped Zn0.9Cd0.1Sc0.03O1.045_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Zn0.9Cd0.1Sc0.03O1.045_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (Zn0.9Cd0.1Sc0.03O1.045_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+Failed Zn0.9Cd0.1Sc0.04O1.06_generalized_grouping_grouped_from_agm002068072_rank_3 (Zn0.9Cd0.1Sc0.04O1.06_generalized_grouping_grouped_from_agm002068072_rank_3.cif): Disordered structure support not built yet.
+Skipped Zn0.9Cd0.1Sc0.04O1.06_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Failed Zn0.9Cd0.1Sc0.04O1.06_generalized_grouping_grouped_from_oqmd-5395345_rank_2 (Zn0.9Cd0.1Sc0.04O1.06_generalized_grouping_grouped_from_oqmd-5395345_rank_2.cif): Disordered structure support not built yet.
+Skipped ZnSc0.02O1.03_generalized_grouping_grouped_from_oqmd-3052242_rank_1: timeout
+Processed 2300/2352 structures...
+Skipped ZrNi1.98Cu0.02Sn: timeout
+Failed ZrNiPb0.18Sn0.8Bi0.02_generalized_grouping_grouped_from_oqmd-3241062_rank_3 (ZrNiPb0.18Sn0.8Bi0.02_generalized_grouping_grouped_from_oqmd-3241062_rank_3.cif): Disordered structure support not built yet.
+Failed ZrNiPb0.18Sn0.8Bi0.02_generalized_grouping_grouped_from_oqmd-5473064_rank_2 (ZrNiPb0.18Sn0.8Bi0.02_generalized_grouping_grouped_from_oqmd-5473064_rank_2.cif): Disordered structure support not built yet.
+Failed ZrNiPb0.18Sn0.8Bi0.02_generalized_grouping_grouped_from_oqmd-5757776_rank_1 (ZrNiPb0.18Sn0.8Bi0.02_generalized_grouping_grouped_from_oqmd-5757776_rank_1.cif): Disordered structure support not built yet.
+Failed ZrNiPb0.78Sn0.2Bi0.02_generalized_grouping_grouped_from_oqmd-5473064_rank_2 (ZrNiPb0.78Sn0.2Bi0.02_generalized_grouping_grouped_from_oqmd-5473064_rank_2.cif): Disordered structure support not built yet.
+Failed ZrNiPb0.78Sn0.2Bi0.02_generalized_grouping_grouped_from_oqmd-5757776_rank_1 (ZrNiPb0.78Sn0.2Bi0.02_generalized_grouping_grouped_from_oqmd-5757776_rank_1.cif): Disordered structure support not built yet.
+Processed 2350/2352 structures...
+Processed 2352/2352 structures...
+Saved structure-based Matminer features: /home/wajdan/Documents/ZT/thermoelectric_modnet/results/matminer_structure_features.csv
+Full run summary: succeeded=1957, skipped=357, failed=38, final shape=(1957, 14)

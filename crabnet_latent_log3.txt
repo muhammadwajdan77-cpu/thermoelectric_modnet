@@ -1,0 +1,104 @@
+nohup: ignoring input
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
+
+======================================================================
+CRABNET LATENT + MATMINER + MODNET PIPELINE
+======================================================================
+Loaded Matminer: (7594, 134)
+  Warning: 125 formulas could not be canonicalized. Using raw formula as group fallback.
+Aligned dataset: 7594 rows, unique canonical/group labels: 1277
+
+--- Fold 1/5 ---
+  Fold 1: Testing CrabNet import...
+  CrabNet import OK
+    CrabNet valid formulas (train): 5987/6075
+    CrabNet valid formulas (test): 1482/1519
+  train latent shape: (6075, 512)
+  test latent shape:  (1519, 512)
+  Removing 6 constant columns
+  Combined feature count: 639
+  MODNet failed: (slice(None, None, None), array([ 22, 635,  84, 406, 321, 173, 327,  85, 112, 386,  14, 416,  62,
+        83, 197,  97, 575,  26,  46, 272, 401,  39,  45,   6, 106,  72,
+        80,  10, 113, 126, 470,  37, 249,  98,   2, 531, 246,  56,  55,
+        44,  89, 104,  71,  40, 591, 231, 217, 408,  41, 526]))
+  Falling back to RandomForestRegressor
+  Fold 1/5: MAE=0.1332 R²=0.7475
+
+--- Fold 2/5 ---
+  Fold 2: Testing CrabNet import...
+  CrabNet import OK
+    CrabNet valid formulas (train): 5964/6075
+    CrabNet valid formulas (test): 1505/1519
+  train latent shape: (6075, 512)
+  test latent shape:  (1519, 512)
+  Removing 6 constant columns
+  Combined feature count: 639
+  MODNet failed: (slice(None, None, None), array([ 19,  27,  46,  21, 482,  34, 326, 301, 531, 121,  70, 457,   8,
+        82, 105,  39,  14,   1,  33,  37, 298,  22, 101, 277,  44,  84,
+        73,  74,  62, 564, 514,  42, 113, 122, 126, 631, 123,  71,  87,
+       104, 164,  43, 302,  72,   2, 462, 586,  40, 120,  41]))
+  Falling back to RandomForestRegressor
+  Fold 2/5: MAE=0.1404 R²=0.7195
+
+--- Fold 3/5 ---
+  Fold 3: Testing CrabNet import...
+  CrabNet import OK
+    CrabNet valid formulas (train): 5974/6075
+    CrabNet valid formulas (test): 1495/1519
+  train latent shape: (6075, 512)
+  test latent shape:  (1519, 512)
+  Removing 6 constant columns
+  Combined feature count: 639
+  MODNet failed: (slice(None, None, None), array([ 39, 290, 465, 100,  68,  83, 448, 106, 610,  19,  99,  63, 123,
+        46,  10,  37,  57, 364,  73,  64, 586,  70, 451, 468,  61,  33,
+       105, 279,  62, 126,  71, 593, 622,  92,   8, 121, 376,   2,  84,
+        89, 222,  26,  55,  72, 120, 589,  40, 104,  41, 563]))
+  Falling back to RandomForestRegressor
+  Fold 3/5: MAE=0.1394 R²=0.7648
+
+--- Fold 4/5 ---
+  Fold 4: Testing CrabNet import...
+  CrabNet import OK
+    CrabNet valid formulas (train): 5980/6075
+    CrabNet valid formulas (test): 1489/1519
+  train latent shape: (6075, 512)
+  test latent shape:  (1519, 512)
+  Removing 6 constant columns
+  Combined feature count: 639
+  MODNet failed: (slice(None, None, None), array([ 72, 101,  15, 100,  14,  56,  39,  99,  51,  85, 122,  87, 170,
+        84,  16,  44, 494, 381,  34,  33,  74, 106, 601, 114, 124, 123,
+         8,  22,  55, 546,   2,  63,  46, 126, 226, 453,  71,  62, 575,
+        40,  70, 382,  37,  10, 628, 335, 120, 195, 631,  41]))
+  Falling back to RandomForestRegressor
+  Fold 4/5: MAE=0.1503 R²=0.7395
+
+--- Fold 5/5 ---
+  Fold 5: Testing CrabNet import...
+  CrabNet import OK
+    CrabNet valid formulas (train): 5971/6076
+    CrabNet valid formulas (test): 1498/1518
+  train latent shape: (6076, 512)
+  test latent shape:  (1518, 512)
+  Removing 6 constant columns
+  Combined feature count: 639
+  MODNet failed: (slice(None, None, None), array([153, 549,  34, 434,  27,  62, 498, 129,  74, 105, 447,  97,  44,
+        22,  82,  28,  56, 113,  85,  55,  63, 123, 616,  98, 111, 124,
+       394, 126, 599, 110,  46, 469,  71,  87, 219,   2, 104,  23,  10,
+       355, 555,  37,  40,  72, 463,   8,  39, 361,  41, 325]))
+  Falling back to RandomForestRegressor
+  Fold 5/5: MAE=0.1286 R²=0.7743
+
+----------------------------------------------------------------------
+RESULTS SUMMARY
+----------------------------------------------------------------------
+Matminer + MODNet baseline:              MAE=0.1347  R²=0.7002
+CrabNet + continuous temp encoding:      MAE=0.1234  R²=0.7509
+Matminer + CrabNet latent + MODNet:      MAE=0.1384  R²=0.7491
+Saved results: /home/wajdan/Documents/ZT/thermoelectric_modnet/results/CRABNET_LATENT_MODNET_RESULTS.csv
+Saved parity plot: /home/wajdan/Documents/ZT/thermoelectric_modnet/results/figures/parity_crabnet_latent_modnet.png
+
+Pipeline complete.

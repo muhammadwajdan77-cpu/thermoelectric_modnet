@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Tl14Sn3Te10
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   10.71448442
+_cell_length_b   10.71448476
+_cell_length_c   10.71448489
+_cell_angle_alpha   60.00000778
+_cell_angle_beta   60.00000674
+_cell_angle_gamma   60.00000092
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Tl14Sn3Te10
+_chemical_formula_sum   'Tl14 Sn3 Te10'
+_cell_volume   869.75897480
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Tl  Tl0  1  0.00000000  0.00000000  0.00000000  1.0
+  Tl  Tl1  1  0.00000000  0.00000000  0.33333333  1.0
+  Sn  Sn2  1  0.00000000  0.00000000  0.66666667  1
+  Te  Te3  1  0.00000000  0.33333333  0.00000000  1
+  Te  Te4  1  0.00000000  0.33333333  0.33333333  1
+  Te  Te5  1  0.00000000  0.33333333  0.66666667  1
+  Tl  Tl6  1  0.00000000  0.66666667  0.00000000  1.0
+  Tl  Tl7  1  0.00000000  0.66666667  0.33333333  1.0
+  Tl  Tl8  1  0.00000000  0.66666667  0.66666667  1.0
+  Tl  Tl9  1  0.33333333  0.00000000  0.00000000  1.0
+  Tl  Tl10  1  0.33333333  0.00000000  0.33333333  1.0
+  Tl  Tl11  1  0.33333333  0.00000000  0.66666667  1.0
+  Sn  Sn12  1  0.33333333  0.33333333  0.00000000  1
+  Tl  Tl13  1  0.33333333  0.33333333  0.33333333  1.0
+  Tl  Tl14  1  0.33333333  0.33333333  0.66666667  1.0
+  Te  Te15  1  0.33333333  0.66666667  0.00000000  1
+  Te  Te16  1  0.33333333  0.66666667  0.33333333  1
+  Te  Te17  1  0.33333333  0.66666667  0.66666667  1
+  Te  Te18  1  0.66666667  0.00000000  0.00000000  1
+  Te  Te19  1  0.66666667  0.00000000  0.33333333  1
+  Te  Te20  1  0.66666667  0.00000000  0.66666667  1
+  Tl  Tl21  1  0.66666667  0.33333333  0.00000000  1.0
+  Tl  Tl22  1  0.66666667  0.33333333  0.33333333  1.0
+  Tl  Tl23  1  0.66666667  0.33333333  0.66666667  1.0
+  Te  Te24  1  0.66666667  0.66666667  0.00000000  1
+  Sn  Sn25  1  0.66666667  0.66666667  0.33333333  1
+  Tl  Tl26  1  0.66666667  0.66666667  0.66666667  1.0

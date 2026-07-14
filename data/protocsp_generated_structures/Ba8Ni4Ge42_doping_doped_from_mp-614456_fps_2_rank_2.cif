@@ -1,0 +1,53 @@
+# generated using pymatgen
+data_Ba4Ni2Ge21
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   8.95058709
+_cell_length_b   8.95058738
+_cell_length_c   8.95058749
+_cell_angle_alpha   60.00000778
+_cell_angle_beta   60.00000674
+_cell_angle_gamma   60.00000092
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   Ba4Ni2Ge21
+_chemical_formula_sum   'Ba4 Ni2 Ge21'
+_cell_volume   507.03700277
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Ge  Ge0  1  0.00000000  0.00000000  0.00000000  1.0
+  Ge  Ge1  1  0.00000000  0.00000000  0.33333333  1.0
+  Ge  Ge2  1  0.00000000  0.00000000  0.66666667  1.0
+  Ge  Ge3  1  0.00000000  0.33333333  0.00000000  1.0
+  Ba  Ba4  1  0.00000000  0.33333333  0.33333333  1
+  Ge  Ge5  1  0.00000000  0.33333333  0.66666667  1.0
+  Ge  Ge6  1  0.00000000  0.66666667  0.00000000  1.0
+  Ge  Ge7  1  0.00000000  0.66666667  0.33333333  1.0
+  Ge  Ge8  1  0.00000000  0.66666667  0.66666667  1.0
+  Ge  Ge9  1  0.33333333  0.00000000  0.00000000  1.0
+  Ge  Ge10  1  0.33333333  0.00000000  0.33333333  1.0
+  Ge  Ge11  1  0.33333333  0.00000000  0.66666667  1.0
+  Ge  Ge12  1  0.33333333  0.33333333  0.00000000  1.0
+  Ni  Ni13  1  0.33333333  0.33333333  0.33333333  1
+  Ge  Ge14  1  0.33333333  0.33333333  0.66666667  1.0
+  Ge  Ge15  1  0.33333333  0.66666667  0.00000000  1.0
+  Ge  Ge16  1  0.33333333  0.66666667  0.33333333  1.0
+  Ba  Ba17  1  0.33333333  0.66666667  0.66666667  1
+  Ba  Ba18  1  0.66666667  0.00000000  0.00000000  1
+  Ge  Ge19  1  0.66666667  0.00000000  0.33333333  1.0
+  Ba  Ba20  1  0.66666667  0.00000000  0.66666667  1
+  Ge  Ge21  1  0.66666667  0.33333333  0.00000000  1.0
+  Ge  Ge22  1  0.66666667  0.33333333  0.33333333  1.0
+  Ge  Ge23  1  0.66666667  0.33333333  0.66666667  1.0
+  Ge  Ge24  1  0.66666667  0.66666667  0.00000000  1.0
+  Ge  Ge25  1  0.66666667  0.66666667  0.33333333  1.0
+  Ni  Ni26  1  0.66666667  0.66666667  0.66666667  1

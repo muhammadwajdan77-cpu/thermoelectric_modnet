@@ -1,0 +1,36 @@
+# generated using pymatgen
+data_LaBiSeSO
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   9.19769706
+_cell_length_b   9.19769706
+_cell_length_c   7.13600146
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   151.51045872
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   LaBiSeSO
+_chemical_formula_sum   'La2 Bi2 Se2 S2 O2'
+_cell_volume   287.95856118
+_cell_formula_units_Z   2
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  O  O0  1  0.05829398  0.94170613  0.04802830  1.0
+  O  O1  1  0.94170613  0.05829398  0.54802820  1.0
+  Se  Se2  1  0.09398199  0.90601812  0.43126673  1.0
+  Se  Se3  1  0.90601812  0.09398199  0.93126663  1.0
+  S  S4  1  0.32620560  0.67379451  0.05800447  1.0
+  S  S5  1  0.67379451  0.32620560  0.55800437  1.0
+  La  La6  1  0.68978796  0.31021214  0.06214405  1.0
+  La  La7  1  0.31021214  0.68978796  0.56214394  1.0
+  Bi  Bi8  1  0.48114454  0.51885556  0.26619810  1.0
+  Bi  Bi9  1  0.51885556  0.48114454  0.76619799  1.0
