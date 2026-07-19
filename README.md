@@ -10,6 +10,7 @@ This repository contains the experimental workflow, analysis scripts, and result
 - Saved result tables and figure-generation scripts under the results directory
 - A bundled copy of the sysTEm dataset resources in the sysTEm_dataset folder
 - A preserved copy of the ProtoCSP-generated CIF structures in data/protocsp_generated_structures for the structure-based comparison workflow
+- An archive of earlier pipeline scripts that were later found to contain data leakage / alignment issues
 
 ## Repository layout
 
@@ -22,99 +23,89 @@ This repository contains the experimental workflow, analysis scripts, and result
 - train_crabnet_with_temp.py: CrabNet training with temperature included
 - extract_matminer_structure_features.py and extract_matminer_structure_features_v2.py: structure feature extraction
 - extract_orb_features.py: ORB feature extraction
-- extract_crabnet_latent.py: latent feature extraction for CrabNet
+- extract_crabnet_latent.py and extract_crabnet_latent_v2.py: CrabNet latent feature extraction
+- hybrid_model_v3.py and hybrid_model_v4.py: hybrid latent-feature + MODNet model training
+- refine_integrity_check.py: post-hoc validation of data integrity and leakage checks
 - generate_shap_plots.py: SHAP visualization generation
-- verify_no_leakage.py: leakage audit and validation checks
+- verify_no_leakage.py / check_real_leakage.py: leakage audit and validation checks
 - prepare_submission.py: submission packaging helper
 
-## Installation
+## Known Issues & Corrections
 
-This repository was developed with Python 3.10+ and uses a pinned environment in the root requirements file.
+Two important bugs were identified and fixed in the corrected pipeline:
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
+1. GroupKFold group-label misalignment
+   - The initial Matminer+MODNet baseline used an invalid fold construction method that relied on positional slice alignment instead of skip-invalid-accumulate behavior.
+   - This inflated the reported Matminer baseline performance.
+   - The fix is implemented with provenance-tracked `canonical_formula` handling in `results/matminer_for_sisso_v2.csv` and the updated cross-validation pipeline in the v2 Matminer workflow.
 
-For sub-project-specific dependencies, see:
+2. CrabNet latent-feature undertraining for hybrid modeling
+   - CrabNet latent-feature extraction originally used an undertrained 1-epoch model for the hybrid model pipeline.
+   - The corrected workflow now uses `hybrid_model_v4.py` with proper 300-epoch per-fold training for stable latent feature extraction.
 
-- MatterVial/requirements.txt
-- ProtoCSP/requirements.txt
-- sysTEm_dataset/requirements.txt
+The corrected scripts and outputs are the authoritative pipeline for current results. The superseded buggy scripts are preserved under `archive/buggy_pipeline_v1/` for transparency and debugging reproducibility.
 
-## Requirements
+## Verified final results
 
-The root requirements file contains the core dependencies used by the main analysis workflow:
+The corrected benchmark results are:
 
-- numpy
-- pandas
-- scikit-learn
-- pymatgen
-- matplotlib
-- seaborn
-- tensorflow
-- modnet
-- tqdm
-- requests
-- openpyxl
+- Matminer+MODNet: MAE = 0.1347 ± 0.0035, R² = 0.7002 ± 0.0315
+- CrabNet+continuous temp: MAE = 0.1234 ± 0.0087, R² = 0.7509 ± 0.0466
+- Matminer+CrabNet latent+MODNet: MAE = 0.1250 ± 0.0068, R² = 0.7422 ± 0.0432
 
-## Scripts and outputs
+## Script-to-output mapping
 
 | Script | Primary output |
 | --- | --- |
 | main.py | Main experiment orchestration |
-| combined_modnet.py | results/results_complete.csv and parity plots under results/figures |
-| fair_comparison_final.py | results/FAIR_COMPARISON_FINAL.csv |
-| fair_comparison_rigorous_test.py | results/FINAL_RESULTS_FIXED_LEAKAGE_FREE.csv |
+| combined_modnet.py | Combined MODNet analysis output and diagnostic parity figures |
+| fair_comparison_final.py | Final corrected comparison results |
+| fair_comparison_rigorous_test.py | Leakage-free verification results |
 | roost_modnet.py | Roost/MatterVial feature baseline results |
-| train_crabnet_zt.py | results/CRABNET_RESULTS.csv |
-| train_crabnet_with_temp.py | results/CRABNET_TEMP_RESULTS.csv |
-| extract_matminer_structure_features.py | results/matminer_structure_features.csv |
-| extract_matminer_structure_features_v2.py | results/matminer_structure_features.csv (updated variant) |
-| extract_orb_features.py | results/ORB_features.csv |
-| extract_crabnet_latent.py | results/CRABNET_LATENT_MODNET_RESULTS.csv |
-| generate_shap_plots.py | SHAP-related CSVs and figures |
-| verify_no_leakage.py | leakage audit output and validation reports |
-| prepare_submission.py | submission-ready packaging helper |
+| train_crabnet_zt.py | CrabNet zT model training results |
+| train_crabnet_with_temp.py | CrabNet temperature-augmented results |
+| extract_matminer_structure_features.py | Base Matminer structure features |
+| extract_matminer_structure_features_v2.py | Updated Matminer structure features |
+| get_matminer_fold_maes.py | Archived Matminer fold evaluation (buggy) |
+| extract_crabnet_latent.py | Archived CrabNet latent feature extraction (buggy) |
+| extract_crabnet_latent_v2.py | Corrected CrabNet latent feature extraction |
+| hybrid_model_v3.py | Hybrid model training variant |
+| hybrid_model_v4.py | Corrected hybrid model training with 300-epoch per-fold training |
+| refine_integrity_check.py | Corrected integrity and leakage validation checks |
+| check_real_leakage.py | Additional leakage analysis helper |
+| prepare_submission.py | Submission packaging helper |
 
-## Current reported results
+## Results files included
 
-The current saved benchmark tables indicate the following best-performing result in results/FINAL_RESULTS.csv:
-
-- Best model: Matminer + MODNet
-- MAE: 0.1130 ± 0.0068
-- R²: 0.7877 ± 0.0196
-
-A stricter leakage-free comparison in results/FINAL_RESULTS_FIXED_LEAKAGE_FREE.csv reports a different, more conservative result:
-
-- Best leakage-free model: Matminer+ROOST+l-OFM+MVL+ORB (XGBoost RFE) + MODNet (Composition-Stratified)
-- MAE: 0.1448 ± 0.0150
-- R²: 0.6574 ± 0.0800
+- `results/matminer_for_sisso_v2.csv`
+- `results/MATMINER_GROUPKFOLD_FOLDS_V2.csv`
+- `results/CRABNET_CONTINUOUS_V2_RESULTS.csv`
+- `results/HYBRID_V4_RESULTS.csv`
+- `results/STATISTICAL_COMPARISON_V2_FINAL.csv`
 
 ## How to reproduce
 
 1. Create and activate a Python environment.
-2. Install dependencies with pip install -r requirements.txt.
-3. Run the main workflow:
+2. Install dependencies with `pip install -r requirements.txt`.
+3. Run the corrected workflow using the updated scripts.
 
 ```bash
 python main.py
 ```
 
-4. For targeted experiments, run the relevant script directly, for example:
+For targeted experiments, run the relevant updated script directly, for example:
 
 ```bash
-python combined_modnet.py
-python fair_comparison_final.py
-python verify_no_leakage.py
+python extract_crabnet_latent_v2.py
+python hybrid_model_v4.py
+python refine_integrity_check.py
 ```
 
-5. Review generated outputs in the results directory and the figures directory.
+4. Review generated outputs in the `results/` directory and the `archive/buggy_pipeline_v1/` folder for the earlier superseded scripts.
 
 ## SysTEm dataset access and citation
 
-This project uses the sysTEm thermoelectric dataset from the bundled sysTEm_dataset folder. The dataset is described in the dataset README and should be cited according to the citation text provided there. If you use the dataset in published work, follow the citation guidance in sysTEm_dataset/README.md.
+This project uses the sysTEm thermoelectric dataset from the bundled `sysTEm_dataset` folder. The dataset is described in the dataset README and should be cited according to the citation text provided there.
 
 ## License
 
