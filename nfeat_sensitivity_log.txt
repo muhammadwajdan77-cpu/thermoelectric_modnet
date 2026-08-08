@@ -1,41 +1,0 @@
-nohup: ignoring input
-2026-07-13 20:56:07.186794: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
-2026-07-13 20:56:07.402586: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-2026-07-13 20:56:07.402644: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
-2026-07-13 20:56:07.441544: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-2026-07-13 20:56:07.517093: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
-2026-07-13 20:56:07.518250: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
-To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2026-07-13 20:56:08.524850: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
-
-======================================================================
-PRE-FLIGHT CHECKS
-======================================================================
-  /home/wajdan/Documents/ZT/thermoelectric_modnet/results/matminer_for_sisso.csv  (7.59 MB)
-  /home/wajdan/Documents/ZT/thermoelectric_modnet/results/matminer_structure_features.csv  (0.42 MB)
-  /home/wajdan/Documents/ZT/thermoelectric_modnet/sysTEm_dataset/sysTEm_dataset.xlsx  (0.83 MB)
-  /home/wajdan/Documents/ZT/thermoelectric_modnet/results/fair_splits.pkl  (0.29 MB)
-Temperature_K included: YES
-Master rows: 7594 ✅
-Fair splits file present: /home/wajdan/Documents/ZT/thermoelectric_modnet/results/fair_splits.pkl ✅
-PRE-FLIGHT CHECKS PASSED
-======================================================================
-
-Temperature_K included: YES
-Master rows: 7594 ✅
-Loaded 5 pre-existing splits from /home/wajdan/Documents/ZT/thermoelectric_modnet/results/fair_splits.pkl ✅
-
-Structure features matched: 7594/7594
-
-======================================================================
-TESTING n_feat = 50
-======================================================================
-
-Model A: Composition + Temperature (n_feat=50)
-----------------------------------------------------------------------
-2026-07-13 20:56:15,780 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
-2026-07-13 20:56:15,801 - modnet - INFO - Multiprocessing on 1 workers.
-2026-07-13 20:56:15,802 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
-  0%|          | 0/127 [00:00<?, ?it/s]  1%|          | 1/127 [00:02<04:42,  2.24s/it] 80%|███████▉  | 101/127 [00:02<00:00, 46.73it/s]100%|██████████| 127/127 [00:02<00:00, 44.83it/s]
-2026-07-13 20:56:18,642 - modnet - INFO - Computing cross NMI between all features...
-  0%|          | 0/7503 [00:00<?, ?it/s]  0%|          | 1/7503 [00:02<5:02:39,  2.42s/it]  1%|▏         | 101/7503 [00:04<05:08, 23.97it/s]  3%|▎         | 201/7503 [00:07<03:52, 31.35it/s]  4%|▍         | 301/7503 [00:09<03:24, 35.28it/s]  5%|▌         | 401/7503 [00:12<03:11, 37.14it/s]  7%|▋         | 501/7503 [00:14<03:02, 38.36it/s]  8%|▊         | 601/7503 [00:17<02:58, 38.74it/s]  9%|▉         | 701/7503 [00:19<02:55, 38.65it/s] 11%|█         | 801/7503 [00:23<03:04, 36.23it/s] 12%|█▏        | 901/7503 [00:25<03:00, 36.60it/s] 13%|█▎        | 1001/7503 [00:28<02:55, 36.99it/s] 15%|█▍        | 1101/7503 [00:30<02:49, 37.71it/s] 16%|█▌        | 1201/7503 [00:33<02:52, 36.63it/s] 17%|█▋        | 1301/7503 [00:36<02:50, 36.45it/s] 19%|█▊        | 1401/7503 [00:39<02:44, 37.10it/s] 20%|██        | 1501/7503 [00:41<02:37, 38.03it/s] 21%|██▏       | 1601/7503 [00:44<02:31, 39.08it/s] 23%|██▎       | 1701/7503 [00:46<02:26, 39.48it/s] 24%|██▍       | 1801/7503 [00:49<02:25, 39.20it/s] 25%|██▌       | 1901/7503 [00:51<02:23, 39.07it/s] 27%|██▋       | 2001/7503 [00:54<02:21, 38.78it/s] 28%|██▊       | 2101/7503 [00:56<02:19, 38.77it/s] 29%|██▉       | 2201/7503 [00:59<02:16, 38.87it/s] 31%|███       | 2301/7503 [01:02<02:14, 38.67it/s] 32%|███▏      | 2401/7503 [01:04<02:14, 37.90it/s] 33%|███▎      | 2501/7503 [01:07<02:14, 37.11it/s] 35%|███▍      | 2601/7503 [01:10<02:15, 36.16it/s] 36%|███▌      | 2701/7503 [01:13<02:16, 35.09it/s] 37%|███▋      | 2801/7503 [01:16<02:13, 35.23it/s] 39%|███▊      | 2901/7503 [01:19<02:11, 35.13it/s] 40%|███▉      | 3001/7503 [01:22<02:07, 35.28it/s] 41%|████▏     | 3101/7503 [01:24<02:03, 35.51it/s] 43%|████▎     | 3201/7503 [01:27<02:02, 35.12it/s] 44%|████▍     | 3301/7503 [01:30<01:59, 35.18it/s] 45%|████▌     | 3401/7503 [01:33<01:55, 35.63it/s] 47%|████▋     | 3501/7503 [01:36<01:51, 35.95it/s] 48%|████▊     | 3601/7503 [01:38<01:46, 36.73it/s] 49%|████▉     | 3701/7503 [01:41<01:43, 36.86it/s] 51%|█████     | 3801/7503 [01:44<01:40, 36.86it/s] 52%|█████▏    | 3901/7503 [01:46<01:36, 37.18it/s] 53%|█████▎    | 4001/7503 [01:49<01:37, 35.83it/s] 55%|█████▍    | 4101/7503 [01:52<01:38, 34.71it/s] 56%|█████▌    | 4201/7503 [01:55<01:37, 33.72it/s] 57%|█████▋    | 4301/7503 [01:59<01:37, 32.83it/s] 59%|█████▊    | 4401/7503 [02:02<01:33, 33.11it/s] 60%|█████▉    | 4501/7503 [02:05<01:30, 33.24it/s] 61%|██████▏   | 4601/7503 [02:08<01:28, 32.84it/s]

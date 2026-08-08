@@ -1,123 +1,0 @@
-nohup: ignoring input
-2026-06-20 10:03:02.108269: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
-2026-06-20 10:03:02.164449: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
-2026-06-20 10:03:02.164531: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
-2026-06-20 10:03:02.166503: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
-2026-06-20 10:03:02.174890: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
-2026-06-20 10:03:02.175103: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
-To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
-AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
-AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
-AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
-2026-06-20 10:03:03.869206: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
-AttributeError: 'MessageFactory' object has no attribute 'GetPrototype'
-Loaded anchor and canonical groups:
-  Anchor rows: 7594
-  Parseable anchor rows: 7594
-  Unique canonical groups: 1325
-
-Starting Model 4/4: Matminer + Roost + l-OFM + MVL + ORB (XGB-RFE) + MODNet...
-  Matminer anchor rows: 7594
-  Roost matched rows: 7594/7594
-  l-OFM matched rows: 6652/7594
-  MVL matched rows: 6652/7594
-  ORB matched rows: 6735/7594
-  Full combined feature set before RFE: 3809 features
-  After removing constant columns: 2502 features
-  NOTE: Performing RFE on full data before GroupKFold split (slightly optimistic)
-  Selected 50 features with XGB-RFE
-
-TRAINING Matminer + Roost + l-OFM + MVL + ORB (XGB-RFE) + MODNet
-Features: 50 | Samples: 7594 | Unique compositions: 1325
-  Fold 1/5 — group overlap check passed (1060 train groups, 265 test groups)
-2026-06-20 10:20:36,921 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
-2026-06-20 10:20:36,970 - modnet - INFO - Multiprocessing on 1 workers.
-2026-06-20 10:20:36,970 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
-  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:02<02:19,  2.85s/it]100%|██████████| 50/50 [00:02<00:00, 17.42it/s]
-2026-06-20 10:20:39,856 - modnet - INFO - Computing cross NMI between all features...
-  0%|          | 0/1225 [00:00<?, ?it/s]  0%|          | 1/1225 [00:05<1:58:42,  5.82s/it]  8%|▊         | 101/1225 [00:10<01:39, 11.24it/s] 16%|█▋        | 201/1225 [00:16<01:11, 14.42it/s] 25%|██▍       | 301/1225 [00:21<00:55, 16.51it/s] 33%|███▎      | 401/1225 [00:25<00:44, 18.33it/s] 41%|████      | 501/1225 [00:29<00:35, 20.26it/s] 49%|████▉     | 601/1225 [00:33<00:27, 22.48it/s] 57%|█████▋    | 701/1225 [00:36<00:21, 23.97it/s] 65%|██████▌   | 801/1225 [00:40<00:16, 25.06it/s] 74%|███████▎  | 901/1225 [00:44<00:12, 25.00it/s] 82%|████████▏ | 1001/1225 [00:49<00:09, 23.45it/s] 90%|████████▉ | 1101/1225 [00:54<00:05, 22.05it/s] 98%|█████████▊| 1201/1225 [00:55<00:00, 28.50it/s]100%|██████████| 1225/1225 [00:55<00:00, 21.99it/s]
-2026-06-20 10:21:35,607 - modnet - INFO - Starting target 1/1: target ...
-2026-06-20 10:21:35,607 - modnet - INFO - Computing mutual information between features and target...
-2026-06-20 10:21:40,501 - modnet - INFO - Computing optimal features...
-2026-06-20 10:21:41,200 - modnet - INFO - Done with target 1/1: target.
-2026-06-20 10:21:41,200 - modnet - INFO - Merging all features...
-2026-06-20 10:21:41,200 - modnet - INFO - Done.
-2026-06-20 10:21:41.227880: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
-2026-06-20 10:21:41.228615: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2256] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
-Skipping registering GPU devices...
-2026-06-20 10:21:59,968 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
- 1/48 [..............................] - ETA: 3s48/48 [==============================] - 0s 1ms/step
-    MAE=0.1475  RMSE=0.2405  R²=0.6465
-  Fold 2/5 — group overlap check passed (1060 train groups, 265 test groups)
-2026-06-20 10:22:00,547 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
-2026-06-20 10:22:00,576 - modnet - INFO - Multiprocessing on 1 workers.
-2026-06-20 10:22:00,576 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
-  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:01<01:03,  1.29s/it]100%|██████████| 50/50 [00:01<00:00, 38.32it/s]
-2026-06-20 10:22:01,887 - modnet - INFO - Computing cross NMI between all features...
-  0%|          | 0/1225 [00:00<?, ?it/s]  0%|          | 1/1225 [00:02<59:43,  2.93s/it]  8%|▊         | 101/1225 [00:05<00:56, 19.97it/s] 16%|█▋        | 201/1225 [00:08<00:38, 26.84it/s] 25%|██▍       | 301/1225 [00:11<00:30, 30.21it/s] 33%|███▎      | 401/1225 [00:14<00:25, 32.20it/s] 41%|████      | 501/1225 [00:17<00:22, 31.84it/s] 49%|████▉     | 601/1225 [00:20<00:19, 31.37it/s] 57%|█████▋    | 701/1225 [00:23<00:16, 31.90it/s] 65%|██████▌   | 801/1225 [00:26<00:13, 32.48it/s] 74%|███████▎  | 901/1225 [00:29<00:09, 33.35it/s] 82%|████████▏ | 1001/1225 [00:32<00:06, 33.78it/s] 90%|████████▉ | 1101/1225 [00:35<00:03, 34.97it/s] 98%|█████████▊| 1201/1225 [00:35<00:00, 45.49it/s]100%|██████████| 1225/1225 [00:35<00:00, 34.19it/s]
-2026-06-20 10:22:37,758 - modnet - INFO - Starting target 1/1: target ...
-2026-06-20 10:22:37,758 - modnet - INFO - Computing mutual information between features and target...
-2026-06-20 10:22:41,288 - modnet - INFO - Computing optimal features...
-2026-06-20 10:22:41,985 - modnet - INFO - Done with target 1/1: target.
-2026-06-20 10:22:41,985 - modnet - INFO - Merging all features...
-2026-06-20 10:22:41,985 - modnet - INFO - Done.
-2026-06-20 10:23:00,192 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
- 1/48 [..............................] - ETA: 3s44/48 [==========================>...] - ETA: 0s48/48 [==============================] - 0s 1ms/step
-    MAE=0.1401  RMSE=0.2211  R²=0.7184
-  Fold 3/5 — group overlap check passed (1060 train groups, 265 test groups)
-2026-06-20 10:23:01,452 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
-2026-06-20 10:23:01,484 - modnet - INFO - Multiprocessing on 1 workers.
-2026-06-20 10:23:01,485 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
-  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:01<01:28,  1.80s/it]100%|██████████| 50/50 [00:01<00:00, 27.53it/s]
-2026-06-20 10:23:03,307 - modnet - INFO - Computing cross NMI between all features...
-  0%|          | 0/1225 [00:00<?, ?it/s]  0%|          | 1/1225 [00:04<1:33:09,  4.57s/it]  8%|▊         | 101/1225 [00:08<01:24, 13.29it/s] 16%|█▋        | 201/1225 [00:13<00:57, 17.70it/s] 25%|██▍       | 301/1225 [00:17<00:45, 20.11it/s] 33%|███▎      | 401/1225 [00:21<00:37, 22.18it/s] 41%|████      | 501/1225 [00:24<00:29, 24.26it/s] 49%|████▉     | 601/1225 [00:27<00:23, 26.80it/s] 57%|█████▋    | 701/1225 [00:30<00:18, 28.49it/s] 65%|██████▌   | 801/1225 [00:33<00:14, 29.67it/s] 74%|███████▎  | 901/1225 [00:36<00:10, 30.79it/s] 82%|████████▏ | 1001/1225 [00:39<00:07, 31.46it/s] 90%|████████▉ | 1101/1225 [00:42<00:03, 32.85it/s] 98%|█████████▊| 1201/1225 [00:43<00:00, 43.06it/s]100%|██████████| 1225/1225 [00:43<00:00, 28.37it/s]
-2026-06-20 10:23:46,529 - modnet - INFO - Starting target 1/1: target ...
-2026-06-20 10:23:46,529 - modnet - INFO - Computing mutual information between features and target...
-2026-06-20 10:23:50,128 - modnet - INFO - Computing optimal features...
-2026-06-20 10:23:50,774 - modnet - INFO - Done with target 1/1: target.
-2026-06-20 10:23:50,774 - modnet - INFO - Merging all features...
-2026-06-20 10:23:50,774 - modnet - INFO - Done.
-2026-06-20 10:24:07,127 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
- 1/48 [..............................] - ETA: 2s48/48 [==============================] - ETA: 0s48/48 [==============================] - 0s 1ms/step
-    MAE=0.1504  RMSE=0.2413  R²=0.6184
-  Fold 4/5 — group overlap check passed (1060 train groups, 265 test groups)
-2026-06-20 10:24:07,692 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
-2026-06-20 10:24:07,720 - modnet - INFO - Multiprocessing on 1 workers.
-2026-06-20 10:24:07,720 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
-  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:01<01:05,  1.33s/it]100%|██████████| 50/50 [00:01<00:00, 37.18it/s]
-2026-06-20 10:24:09,072 - modnet - INFO - Computing cross NMI between all features...
-  0%|          | 0/1225 [00:00<?, ?it/s]  0%|          | 1/1225 [00:02<1:00:36,  2.97s/it]  8%|▊         | 101/1225 [00:05<00:54, 20.67it/s] 16%|█▋        | 201/1225 [00:08<00:37, 27.01it/s] 25%|██▍       | 301/1225 [00:11<00:30, 30.33it/s] 33%|███▎      | 401/1225 [00:14<00:25, 32.25it/s] 41%|████      | 501/1225 [00:17<00:21, 33.15it/s] 49%|████▉     | 601/1225 [00:19<00:18, 34.08it/s] 57%|█████▋    | 701/1225 [00:22<00:15, 34.51it/s] 65%|██████▌   | 801/1225 [00:25<00:12, 34.51it/s] 74%|███████▎  | 901/1225 [00:28<00:09, 34.73it/s] 82%|████████▏ | 1001/1225 [00:31<00:06, 34.62it/s] 90%|████████▉ | 1101/1225 [00:33<00:03, 36.20it/s] 98%|█████████▊| 1201/1225 [00:34<00:00, 47.36it/s]100%|██████████| 1225/1225 [00:34<00:00, 35.51it/s]
-2026-06-20 10:24:43,599 - modnet - INFO - Starting target 1/1: target ...
-2026-06-20 10:24:43,599 - modnet - INFO - Computing mutual information between features and target...
-2026-06-20 10:24:47,402 - modnet - INFO - Computing optimal features...
-2026-06-20 10:24:48,125 - modnet - INFO - Done with target 1/1: target.
-2026-06-20 10:24:48,125 - modnet - INFO - Merging all features...
-2026-06-20 10:24:48,125 - modnet - INFO - Done.
-2026-06-20 10:25:05,997 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
- 1/48 [..............................] - ETA: 2s48/48 [==============================] - 0s 1ms/step
-    MAE=0.1651  RMSE=0.2736  R²=0.6258
-  Fold 5/5 — group overlap check passed (1060 train groups, 265 test groups)
-2026-06-20 10:25:06,557 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
-2026-06-20 10:25:06,586 - modnet - INFO - Multiprocessing on 1 workers.
-2026-06-20 10:25:06,587 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
-  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:01<01:05,  1.34s/it]100%|██████████| 50/50 [00:01<00:00, 36.99it/s]
-2026-06-20 10:25:07,954 - modnet - INFO - Computing cross NMI between all features...
-  0%|          | 0/1225 [00:00<?, ?it/s]  0%|          | 1/1225 [00:02<59:55,  2.94s/it]  8%|▊         | 101/1225 [00:05<00:54, 20.65it/s] 16%|█▋        | 201/1225 [00:08<00:37, 27.08it/s] 25%|██▍       | 301/1225 [00:11<00:30, 30.39it/s] 33%|███▎      | 401/1225 [00:14<00:25, 31.95it/s] 41%|████      | 501/1225 [00:17<00:22, 32.75it/s] 49%|████▉     | 601/1225 [00:20<00:18, 33.48it/s] 57%|█████▋    | 701/1225 [00:23<00:15, 33.82it/s] 65%|██████▌   | 801/1225 [00:25<00:12, 33.78it/s] 74%|███████▎  | 901/1225 [00:28<00:09, 34.04it/s] 82%|████████▏ | 1001/1225 [00:31<00:06, 34.25it/s] 90%|████████▉ | 1101/1225 [00:34<00:03, 35.68it/s] 98%|█████████▊| 1201/1225 [00:34<00:00, 46.79it/s]100%|██████████| 1225/1225 [00:34<00:00, 35.10it/s]
-2026-06-20 10:25:42,887 - modnet - INFO - Starting target 1/1: target ...
-2026-06-20 10:25:42,887 - modnet - INFO - Computing mutual information between features and target...
-2026-06-20 10:25:46,614 - modnet - INFO - Computing optimal features...
-2026-06-20 10:25:47,299 - modnet - INFO - Done with target 1/1: target.
-2026-06-20 10:25:47,299 - modnet - INFO - Merging all features...
-2026-06-20 10:25:47,300 - modnet - INFO - Done.
-2026-06-20 10:26:03,437 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
- 1/48 [..............................] - ETA: 2s48/48 [==============================] - 0s 1ms/step
-    MAE=0.1540  RMSE=0.2504  R²=0.6756
-  Saved parity plot: /home/wajdan/Documents/ZT/thermoelectric_modnet/results/figures/honest_parity_Matminer_plus_Roost_plus_l-OFM_plus_MVL_plus_ORB_(XGB-RFE)_plus_MODNet.png
-Model 4/4 complete: R2=0.6569
-
-Saved honest final results: /home/wajdan/Documents/ZT/thermoelectric_modnet/results/HONEST_FINAL_RESULTS.csv
-
-FINAL COMPARISON TABLE
-                                                  Model           MAE          RMSE            R2  N_Samples  N_Unique_Compositions
-Matminer + Roost + l-OFM + MVL + ORB (XGB-RFE) + MODNet 0.1514±0.0082 0.2454±0.0170 0.6569±0.0366       7594                   1325

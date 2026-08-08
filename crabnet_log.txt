@@ -1,145 +1,0 @@
-nohup: ignoring input
-Valid rows after formula filter: 7594
-Removed invalid rows: 397
-Loaded dataset: 7594 rows, 1262 unique compositions
-Data length: 7594, unique compositions: 1262
-Fold 1/5: train=4828 rows, val=1247 rows, test=1519 rows
-
-Model architecture: out_dims, d_model, N, heads
-3, 512, 3, 4
-Running on compute device: cpu
-/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/crabnet/kingcrab.py:343: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
-  self.transformer_encoder = nn.TransformerEncoder(
-Model size: 11987206 parameters
-
-Generating EDM:   0%|          | 0/4828 [00:00<?, ?formulae/s]Generating EDM: 100%|██████████| 4828/4828 [00:00<00:00, 122521.45formulae/s]
-loading data with up to 7 elements in the formula
-training with batchsize 256 (2**8.000)
-Generating EDM:   0%|          | 0/1247 [00:00<?, ?formulae/s]Generating EDM: 100%|██████████| 1247/1247 [00:00<00:00, 140418.20formulae/s]
-loading data with up to 7 elements in the formula
-stepping every 190 training passes, cycling lr every 10 epochs
-running for 300 epochs, unless early stopping occurs
-checkin at 20 epochs to match lr scheduler
-Error training fold 1: _NoOpSWA is not an Optimizer
-Traceback (most recent call last):
-  File "/home/wajdan/Documents/ZT/thermoelectric_modnet/train_crabnet_zt.py", line 178, in run_cv
-    model.fit(
-  File "/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/crabnet/crabnet_.py", line 385, in fit
-    lr_scheduler = CyclicLR(
-  File "/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 1897, in __init__
-    raise TypeError(f"{type(optimizer).__name__} is not an Optimizer")
-TypeError: _NoOpSWA is not an Optimizer
-Fold 2/5: train=4728 rows, val=1347 rows, test=1519 rows
-
-Model architecture: out_dims, d_model, N, heads
-3, 512, 3, 4
-Running on compute device: cpu
-/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/crabnet/kingcrab.py:343: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
-  self.transformer_encoder = nn.TransformerEncoder(
-Model size: 11987206 parameters
-
-Generating EDM:   0%|          | 0/4728 [00:00<?, ?formulae/s]Generating EDM: 100%|██████████| 4728/4728 [00:00<00:00, 123516.32formulae/s]
-loading data with up to 7 elements in the formula
-training with batchsize 256 (2**8.000)
-Generating EDM:   0%|          | 0/1347 [00:00<?, ?formulae/s]Generating EDM: 100%|██████████| 1347/1347 [00:00<00:00, 75419.20formulae/s]
-loading data with up to 7 elements in the formula
-stepping every 190 training passes, cycling lr every 10 epochs
-running for 300 epochs, unless early stopping occurs
-checkin at 20 epochs to match lr scheduler
-Error training fold 2: _NoOpSWA is not an Optimizer
-Traceback (most recent call last):
-  File "/home/wajdan/Documents/ZT/thermoelectric_modnet/train_crabnet_zt.py", line 178, in run_cv
-    model.fit(
-  File "/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/crabnet/crabnet_.py", line 385, in fit
-    lr_scheduler = CyclicLR(
-  File "/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 1897, in __init__
-    raise TypeError(f"{type(optimizer).__name__} is not an Optimizer")
-TypeError: _NoOpSWA is not an Optimizer
-Fold 3/5: train=4892 rows, val=1183 rows, test=1519 rows
-
-Model architecture: out_dims, d_model, N, heads
-3, 512, 3, 4
-Running on compute device: cpu
-/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/crabnet/kingcrab.py:343: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
-  self.transformer_encoder = nn.TransformerEncoder(
-Model size: 11987206 parameters
-
-Generating EDM:   0%|          | 0/4892 [00:00<?, ?formulae/s]Generating EDM: 100%|██████████| 4892/4892 [00:00<00:00, 107661.94formulae/s]
-loading data with up to 7 elements in the formula
-training with batchsize 256 (2**8.000)
-Generating EDM:   0%|          | 0/1183 [00:00<?, ?formulae/s]Generating EDM: 100%|██████████| 1183/1183 [00:00<00:00, 159817.75formulae/s]
-loading data with up to 7 elements in the formula
-stepping every 200 training passes, cycling lr every 10 epochs
-running for 300 epochs, unless early stopping occurs
-checkin at 20 epochs to match lr scheduler
-Error training fold 3: _NoOpSWA is not an Optimizer
-Traceback (most recent call last):
-  File "/home/wajdan/Documents/ZT/thermoelectric_modnet/train_crabnet_zt.py", line 178, in run_cv
-    model.fit(
-  File "/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/crabnet/crabnet_.py", line 385, in fit
-    lr_scheduler = CyclicLR(
-  File "/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 1897, in __init__
-    raise TypeError(f"{type(optimizer).__name__} is not an Optimizer")
-TypeError: _NoOpSWA is not an Optimizer
-Fold 4/5: train=4840 rows, val=1235 rows, test=1519 rows
-
-Model architecture: out_dims, d_model, N, heads
-3, 512, 3, 4
-Running on compute device: cpu
-/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/crabnet/kingcrab.py:343: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
-  self.transformer_encoder = nn.TransformerEncoder(
-Model size: 11987206 parameters
-
-Generating EDM:   0%|          | 0/4840 [00:00<?, ?formulae/s]Generating EDM: 100%|██████████| 4840/4840 [00:00<00:00, 123100.06formulae/s]
-loading data with up to 7 elements in the formula
-training with batchsize 256 (2**8.000)
-Generating EDM:   0%|          | 0/1235 [00:00<?, ?formulae/s]Generating EDM: 100%|██████████| 1235/1235 [00:00<00:00, 166445.98formulae/s]
-loading data with up to 7 elements in the formula
-stepping every 190 training passes, cycling lr every 10 epochs
-running for 300 epochs, unless early stopping occurs
-checkin at 20 epochs to match lr scheduler
-Error training fold 4: _NoOpSWA is not an Optimizer
-Traceback (most recent call last):
-  File "/home/wajdan/Documents/ZT/thermoelectric_modnet/train_crabnet_zt.py", line 178, in run_cv
-    model.fit(
-  File "/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/crabnet/crabnet_.py", line 385, in fit
-    lr_scheduler = CyclicLR(
-  File "/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 1897, in __init__
-    raise TypeError(f"{type(optimizer).__name__} is not an Optimizer")
-TypeError: _NoOpSWA is not an Optimizer
-Fold 5/5: train=4885 rows, val=1191 rows, test=1518 rows
-
-Model architecture: out_dims, d_model, N, heads
-3, 512, 3, 4
-Running on compute device: cpu
-/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/crabnet/kingcrab.py:343: UserWarning: enable_nested_tensor is True, but self.use_nested_tensor is False because encoder_layer.self_attn.batch_first was not True(use batch_first for better inference performance)
-  self.transformer_encoder = nn.TransformerEncoder(
-Model size: 11987206 parameters
-
-Generating EDM:   0%|          | 0/4885 [00:00<?, ?formulae/s]Generating EDM: 100%|██████████| 4885/4885 [00:00<00:00, 122263.58formulae/s]
-loading data with up to 7 elements in the formula
-training with batchsize 256 (2**8.000)
-Generating EDM:   0%|          | 0/1191 [00:00<?, ?formulae/s]Generating EDM: 100%|██████████| 1191/1191 [00:00<00:00, 162325.86formulae/s]
-loading data with up to 7 elements in the formula
-stepping every 200 training passes, cycling lr every 10 epochs
-running for 300 epochs, unless early stopping occurs
-checkin at 20 epochs to match lr scheduler
-Error training fold 5: _NoOpSWA is not an Optimizer
-Traceback (most recent call last):
-  File "/home/wajdan/Documents/ZT/thermoelectric_modnet/train_crabnet_zt.py", line 178, in run_cv
-    model.fit(
-  File "/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/crabnet/crabnet_.py", line 385, in fit
-    lr_scheduler = CyclicLR(
-  File "/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/torch/optim/lr_scheduler.py", line 1897, in __init__
-    raise TypeError(f"{type(optimizer).__name__} is not an Optimizer")
-TypeError: _NoOpSWA is not an Optimizer
-
-Final comparison:
-Traceback (most recent call last):
-  File "/home/wajdan/Documents/ZT/thermoelectric_modnet/train_crabnet_zt.py", line 242, in <module>
-    main()
-  File "/home/wajdan/Documents/ZT/thermoelectric_modnet/train_crabnet_zt.py", line 238, in main
-    save_results(results, overall, all_preds_df)
-  File "/home/wajdan/Documents/ZT/thermoelectric_modnet/train_crabnet_zt.py", line 226, in save_results
-    print(f"CrabNet (direct ZT):     MAE={overall_mae:.4f} R²={overall_r2:.4f}")
-TypeError: unsupported format string passed to NoneType.__format__

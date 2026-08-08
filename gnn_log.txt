@@ -1,99 +1,0 @@
-nohup: ignoring input
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 16 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 168 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 120 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 48 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 32 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 54 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 50 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 216 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 2 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 128 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 56 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 64 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 192 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 8 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 24 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 40 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 144 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 98 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 4 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 240 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 12 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 72 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 6 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-/home/wajdan/miniconda3/envs/ML39/lib/python3.9/site-packages/pymatgen/io/cif.py:1287: UserWarning: Issues encountered while parsing CIF: 10 fractional coordinates rounded to ideal values to avoid issues with finite precision.
-  warnings.warn("Issues encountered while parsing CIF: " + "\n".join(self.warnings))
-2026-06-08 21:04:23.691342: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
-To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2026-06-08 21:04:26.718396: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
-2026-06-08 21:04:26.925655: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
-2026-06-08 21:04:26.925916: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
-2026-06-08 21:04:26.928534: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
-2026-06-08 21:04:26.928740: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
-2026-06-08 21:04:26.928940: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
-2026-06-08 21:04:26.992723: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
-2026-06-08 21:04:26.993228: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
-2026-06-08 21:04:26.993386: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:995] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
-2026-06-08 21:04:26.993853: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4700 MB memory:  -> device: 0, name: Quadro P3200, pci bus id: 0000:01:00.0, compute capability: 6.1
-Loaded 1348 unique structures from 5708 CIF files
-Warning: ORB models not available. Please install orb-models to use ORBFeaturizer.
-Total params: 644652 (2.46 MB)
-Processing 1348 structures with OFMEncoded_v1 model...
-Converting 1348 structures to graphs using ThreadPool...
-Successfully converted 1331/1348 structures.
-Predicting on 1331 structures using model.predict_structures...
-Saved results/lOFM_features.csv with shape (1348, 188)
-Preparing graphs for all 6 MVL models...
-Converting 1348 structures to graphs using ThreadPool...
-Successfully converted 1331/1348 structures.
-Processing model: Eform_MP_2019 for all layers...
-Extracting intermediate layers in batches of 128...
- 1/11 [=>............................] - ETA: 25s 2/11 [====>.........................] - ETA: 6s  3/11 [=======>......................] - ETA: 7s 4/11 [=========>....................] - ETA: 6s 5/11 [============>.................] - ETA: 5s 6/11 [===============>..............] - ETA: 4s 7/11 [==================>...........] - ETA: 3s 8/11 [====================>.........] - ETA: 2s 9/11 [=======================>......] - ETA: 1s10/11 [==========================>...] - ETA: 0s11/11 [==============================] - 9s 650ms/step
-Features for all layers calculated for model Eform_MP_2019.
-Processing model: Efermi_MP_2019 for all layers...
-Extracting intermediate layers in batches of 128...
- 1/11 [=>............................] - ETA: 25s 2/11 [====>.........................] - ETA: 5s  3/11 [=======>......................] - ETA: 6s 4/11 [=========>....................] - ETA: 5s 5/11 [============>.................] - ETA: 4s 6/11 [===============>..............] - ETA: 4s 7/11 [==================>...........] - ETA: 3s 8/11 [====================>.........] - ETA: 2s 9/11 [=======================>......] - ETA: 1s10/11 [==========================>...] - ETA: 0s11/11 [==============================] - 9s 614ms/step
-Features for all layers calculated for model Efermi_MP_2019.
-Processing model: Bandgap_classifier_MP_2018 for all layers...
-Extracting intermediate layers in batches of 128...
- 1/11 [=>............................] - ETA: 33s 2/11 [====>.........................] - ETA: 6s  3/11 [=======>......................] - ETA: 6s 4/11 [=========>....................] - ETA: 5s 5/11 [============>.................] - ETA: 5s 6/11 [===============>..............] - ETA: 4s 7/11 [==================>...........] - ETA: 3s 8/11 [====================>.........] - ETA: 2s 9/11 [=======================>......] - ETA: 1s10/11 [==========================>...] - ETA: 0s11/11 [==============================] - 10s 622ms/step
-Features for all layers calculated for model Bandgap_classifier_MP_2018.
-Processing model: Bandgap_MP_2018 for all layers...
-Extracting intermediate layers in batches of 128...
- 1/11 [=>............................] - ETA: 31s 2/11 [====>.........................] - ETA: 5s  3/11 [=======>......................] - ETA: 6s 4/11 [=========>....................] - ETA: 5s 5/11 [============>.................] - ETA: 5s 6/11 [===============>..............] - ETA: 4s 7/11 [==================>...........] - ETA: 3s 8/11 [====================>.........] - ETA: 2s 9/11 [=======================>......] - ETA: 1s10/11 [==========================>...] - ETA: 0s11/11 [==============================] - 9s 618ms/step
-Features for all layers calculated for model Bandgap_MP_2018.
-Processing model: logK_MP_2019 for all layers...
-Extracting intermediate layers in batches of 128...
- 1/11 [=>............................] - ETA: 29s 2/11 [====>.........................] - ETA: 6s  3/11 [=======>......................] - ETA: 7s 4/11 [=========>....................] - ETA: 5s 5/11 [============>.................] - ETA: 5s 6/11 [===============>..............] - ETA: 4s 7/11 [==================>...........] - ETA: 3s 8/11 [====================>.........] - ETA: 2s 9/11 [=======================>......] - ETA: 1s10/11 [==========================>...] - ETA: 0s11/11 [==============================] - 9s 643ms/step
-Features for all layers calculated for model logK_MP_2019.
-Processing model: logG_MP_2019 for all layers...
-Extracting intermediate layers in batches of 128...
- 1/11 [=>............................] - ETA: 31s 2/11 [====>.........................] - ETA: 6s  3/11 [=======>......................] - ETA: 7s 4/11 [=========>....................] - ETA: 6s 5/11 [============>.................] - ETA: 5s 6/11 [===============>..............] - ETA: 4s 7/11 [==================>...........] - ETA: 3s 8/11 [====================>.........] - ETA: 2s 9/11 [=======================>......] - ETA: 1s10/11 [==========================>...] - ETA: 0s11/11 [==============================] - 10s 679ms/step
-Features for all layers calculated for model logG_MP_2019.
-Saved results/MVL_features.csv with shape (1348, 288)
-WARNING: Skipping ORB feature extraction: ORB failed: ORB dependencies not available for ORBFeaturizer: ORB models not available. Please install orb-models package.. Please install orb-models package or use the ORB environment.
-Feature extraction complete.
