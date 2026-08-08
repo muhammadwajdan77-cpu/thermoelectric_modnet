@@ -42,3 +42,17 @@ results/*.csv
 !results/RIGOROUS_STATISTICAL_TESTS.csv
 !results/matminer_for_sisso.csv
 !results/matminer_structure_features.csv
+
+# Ignore debug and verification logs, but keep result text files
+hybrid_v3_run*.txt
+hybrid_v3_verification_log.txt
+hybrid_v4_log.txt
+*_log.txt
+!results/*.txt
+
+# Track corrected pipeline output files
+!results/matminer_for_sisso_v2.csv
+!results/MATMINER_GROUPKFOLD_FOLDS_V2.csv
+!results/CRABNET_CONTINUOUS_V2_RESULTS.csv
+!results/HYBRID_V4_RESULTS.csv
+!results/STATISTICAL_COMPARISON_V2_FINAL.csv

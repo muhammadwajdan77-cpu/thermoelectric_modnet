@@ -19,16 +19,16 @@ from matminer.featurizers.structure import (
     GlobalSymmetryFeatures,
     SiteStatsFingerprint,
 )
-from pymatgen.core import Structure
+from pymatgen.core import Composition, Structure
 
 warnings.filterwarnings("ignore")
 
 PROJECT_DIR = Path(__file__).resolve().parent
-STRUCTURES_DIR = PROJECT_DIR / "ProtoCSP" / "generated_structures"
+STRUCTURES_DIR = PROJECT_DIR / "data" / "protocsp_generated_structures"
 RESULTS_DIR = PROJECT_DIR / "results"
 RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_PATH = RESULTS_DIR / "matminer_structure_features.csv"
-TIMEOUT_SECONDS = 30
+TIMEOUT_SECONDS = 120
 PROGRESS_STEP = 50
 
 
@@ -39,27 +39,67 @@ def handler(signum, frame):
 signal.signal(signal.SIGALRM, handler)
 
 
-def extract_composition_from_filename(path: Path) -> str:
-    stem = path.stem
-    match = re.match(r"^(.+?)_doping_", stem)
-    if match:
-        return match.group(1)
-    return stem
+def extract_composition_from_filename(path: Path | str) -> str:
+    stem = path.stem if isinstance(path, Path) else Path(path).stem
+    match = re.match(r"^([^_]+)", stem)
+    return match.group(1) if match else stem
 
 
-def load_unique_structure_paths(structures_dir: Path) -> dict[str, Path]:
+def canonical_formula_from_filename(path: Path | str) -> str:
+    raw = extract_composition_from_filename(path)
+    try:
+        return str(Composition(raw).reduced_formula)
+    except Exception:
+        return raw.replace(" ", "")
+
+
+def load_target_canonical_formulas() -> set[str] | None:
+    mat_path = RESULTS_DIR / "matminer_for_sisso_v2.csv"
+    if not mat_path.exists():
+        return None
+
+    df = pd.read_csv(mat_path)
+    if "canonical_formula" not in df.columns:
+        return None
+
+    formulas = set()
+    for value in df["canonical_formula"].astype(str):
+        text = value.strip()
+        if not text or text.lower() in {"nan", "none"}:
+            continue
+        try:
+            formulas.add(str(Composition(text).reduced_formula))
+        except Exception:
+            formulas.add(text.replace(" ", ""))
+    return formulas
+
+
+def load_unique_structure_paths(structures_dir: Path, target_formulas: set[str] | None = None) -> dict[str, list[Path]]:
     cif_paths = sorted(structures_dir.glob("*.cif"))
     if not cif_paths:
         raise FileNotFoundError(f"No CIF files found in {structures_dir}")
 
-    unique_paths: dict[str, Path] = {}
+    unique_paths: dict[str, list[Path]] = {}
     for cif_path in cif_paths:
-        composition = extract_composition_from_filename(cif_path)
-        if composition not in unique_paths:
-            unique_paths[composition] = cif_path
+        canonical = canonical_formula_from_filename(cif_path)
+        if not canonical:
+            continue
+        if target_formulas is not None and canonical not in target_formulas:
+            continue
+        unique_paths.setdefault(canonical, []).append(cif_path)
 
     print(f"Found {len(cif_paths)} CIF files", flush=True)
-    print(f"Loaded {len(unique_paths)} unique compositions", flush=True)
+    print(f"Loaded {len(unique_paths)} unique canonical compositions", flush=True)
+    if target_formulas is not None:
+        missing = sorted(target_formulas - set(unique_paths))
+        print(
+            f"Target matminer unique formulas: {len(target_formulas)}; "
+            f"covered by CIF corpus: {len(unique_paths)}; "
+            f"missing from CIF corpus: {len(missing)}",
+            flush=True,
+        )
+        if missing:
+            print("Sample missing formulas:", missing[:20], flush=True)
     return unique_paths
 
 
@@ -72,7 +112,7 @@ def build_featurizers() -> list:
 
 
 def get_feature_names(featurizers: list) -> list[str]:
-    names = ["composition"]
+    names = ["composition", "canonical_formula"]
     for featurizer in featurizers:
         names.extend(featurizer.feature_labels())
     return names
@@ -98,25 +138,33 @@ def process_paths(
     total = len(paths) if max_items is None else min(max_items, len(paths))
 
     items = list(paths.items())[:total]
-    for idx, (composition, cif_path) in enumerate(items, start=1):
+    for idx, (canonical, cif_path_list) in enumerate(items, start=1):
         if idx % PROGRESS_STEP == 0 or idx == total:
             print(f"Processed {idx}/{total} {description}...", flush=True)
 
-        try:
-            structure = Structure.from_file(str(cif_path))
-            signal.alarm(TIMEOUT_SECONDS)
+        row_written = False
+        for cif_path in cif_path_list:
             try:
-                features = featurize_structure(structure, featurizers)
-            finally:
-                signal.alarm(0)
-            rows.append([composition] + features)
-            success += 1
-        except TimeoutError:
-            skipped += 1
-            print(f"Skipped {composition}: timeout", flush=True)
-        except Exception as exc:
-            failed += 1
-            print(f"Failed {composition} ({cif_path.name}): {exc}", flush=True)
+                structure = Structure.from_file(str(cif_path))
+                raw_composition = extract_composition_from_filename(cif_path)
+                signal.alarm(TIMEOUT_SECONDS)
+                try:
+                    features = featurize_structure(structure, featurizers)
+                finally:
+                    signal.alarm(0)
+                rows.append([raw_composition, canonical] + features)
+                success += 1
+                row_written = True
+                break
+            except TimeoutError:
+                skipped += 1
+                print(f"Skipped {canonical} from {cif_path.name}: timeout", flush=True)
+            except Exception as exc:
+                failed += 1
+                print(f"Failed {canonical} from {cif_path.name}: {exc}", flush=True)
+
+        if not row_written:
+            print(f"No valid structure extracted for {canonical}", flush=True)
 
     return rows, success, skipped, failed
 
@@ -129,7 +177,8 @@ def print_summary(prefix: str, success: int, skipped: int, failed: int, df: pd.D
 
 
 def main() -> None:
-    unique_paths = load_unique_structure_paths(STRUCTURES_DIR)
+    target_formulas = load_target_canonical_formulas()
+    unique_paths = load_unique_structure_paths(STRUCTURES_DIR, target_formulas=target_formulas)
     featurizers = build_featurizers()
     feature_names = get_feature_names(featurizers)
 
