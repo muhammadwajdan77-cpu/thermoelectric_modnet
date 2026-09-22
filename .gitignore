@@ -1,7 +1,9 @@
+archive/
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.pyc
 *.log
 *.tmp
 *.bak
@@ -12,6 +14,8 @@ __pycache__/
 .ipynb_checkpoints/
 venv/
 venv311/
+results/checkpoints/
+results/matminer_structure_features_full_partial.jsonl
 *.egg-info/
 *.sqlite3
 *.pickle
@@ -56,3 +60,8 @@ hybrid_v4_log.txt
 !results/CRABNET_CONTINUOUS_V2_RESULTS.csv
 !results/HYBRID_V4_RESULTS.csv
 !results/STATISTICAL_COMPARISON_V2_FINAL.csv
+!results/STRUCTURE_COMPARISON_V2_FINAL.csv
+!results/group_kfold_splits_v2.pkl
+results/final/TASK2_HYBRID_V4_FOLD_LATENTS.csv
+results/TASK2_HYBRID_V4_FOLD_LATENTS.csv
+results/HYBRID_V4_FOLD_LATENTS.csv

@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Re-run Matminer + MODNet with GroupKFold and save fold-level MAEs plus a corrected resampling t-test comparison."""
+"""Re-run Matminer + MODNet with GroupKFold and save fold-level MAEs plus a corrected resampling t-test comparison.
+
+WARNING: This archived script uses a flawed GroupKFold grouping procedure that can create canonical formula overlap between train and test.
+That leakage inflated the old Matminer+MODNet baseline near 0.1347. Use the corrected V2 workflow instead.
+"""
 
 from __future__ import annotations
 

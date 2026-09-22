@@ -26,8 +26,8 @@ plt.rcParams.update({
     "figure.dpi": 300,
 })
 
-MATMINER_CSV = RESULTS_DIR / "matminer_for_sisso.csv"
-HYBRID_CSV = RESULTS_DIR / "CRABNET_LATENT_MODNET_RESULTS.csv"
+MATMINER_CSV = RESULTS_DIR / "matminer_for_sisso_v2.csv"
+HYBRID_CSV = RESULTS_DIR / "HYBRID_V4_FOLD_LATENTS.csv"
 
 N_SAMPLES = 500
 MAX_BACKGROUND_SAMPLES = 100
@@ -103,10 +103,17 @@ def build_matminer_shap():
 
     mat = pd.read_csv(MATMINER_CSV)
     if "target" not in mat.columns:
-        raise ValueError("Expected 'target' column in matminer_for_sisso.csv")
+        raise ValueError("Expected 'target' column in matminer_for_sisso_v2.csv")
+
+    feature_cols = [
+        col for col in mat.columns
+        if col != "target" and pd.api.types.is_numeric_dtype(mat[col]) and col != "sys_df_original_index"
+    ]
+    if not feature_cols:
+        raise ValueError(f"No numeric feature columns found in {MATMINER_CSV}")
 
     y = mat["target"].astype(float).to_numpy()
-    X = mat.drop(columns=["target"]).copy()
+    X = mat[feature_cols].copy()
 
     X = X.replace([np.inf, -np.inf], np.nan)
     X = X.fillna(0.0)
@@ -138,53 +145,56 @@ def build_matminer_shap():
 def build_hybrid_shap():
     if not MATMINER_CSV.exists():
         raise FileNotFoundError(f"Missing matminer CSV: {MATMINER_CSV}")
+    if not HYBRID_CSV.exists():
+        raise FileNotFoundError(f"Missing hybrid latent CSV: {HYBRID_CSV}")
 
     mat = pd.read_csv(MATMINER_CSV)
     if "target" not in mat.columns:
-        raise ValueError("Expected 'target' column in matminer_for_sisso.csv")
+        raise ValueError("Expected 'target' column in matminer_for_sisso_v2.csv")
 
-    y = mat["target"].astype(float).to_numpy()
-    X_mat = mat.drop(columns=["target"]).copy()
+    mat = mat.reset_index(drop=True)
+    mat["row_id"] = mat.index.to_numpy()
 
-    X_mat = X_mat.replace([np.inf, -np.inf], np.nan).fillna(0.0)
+    latent_df = pd.read_csv(HYBRID_CSV)
+    if "row_id" not in latent_df.columns:
+        raise ValueError(f"Expected 'row_id' column in {HYBRID_CSV}")
+    if "split" not in latent_df.columns:
+        raise ValueError(f"Expected 'split' column in {HYBRID_CSV}")
 
-    latent_dim = 512
-    latent_cols = [f"CrabLatent_{i}" for i in range(latent_dim)]
-    hybrid_features = pd.DataFrame(index=X_mat.index)
-    hybrid_features[latent_cols] = 0.0
+    latent_cols = [c for c in latent_df.columns if c.startswith("CrabLatent_")]
+    if not latent_cols:
+        raise ValueError(f"No CrabLatent_ columns found in {HYBRID_CSV}")
 
-    try:
-        from crabnet.crabnet_ import CrabNet
-        from extract_crabnet_latent import load_data, build_feature_dataframe, extract_latent_features
-        import torch
-        torch.set_num_threads(1)
+    test_latents = latent_df[latent_df["split"] == "test"].copy()
+    if len(test_latents) == 0:
+        raise ValueError(f"No test split rows found in {HYBRID_CSV}")
 
-        X_mat_full, y_full, df_aligned = load_data()
-        if len(df_aligned) != len(X_mat_full):
-            raise ValueError("Aligned dataset length mismatch")
+    merged = mat.merge(
+        test_latents[["row_id", *latent_cols]],
+        on="row_id",
+        how="inner",
+        validate="one_to_one",
+    )
 
-        valid_mask = df_aligned["Pretty Formula"].apply(lambda s: str(s) != "nan")
-        df_valid = df_aligned[valid_mask].reset_index(drop=True)
-        if len(df_valid) == 0:
-            raise ValueError("No valid formulas for CrabNet latent extraction")
+    if len(merged) != len(test_latents):
+        raise ValueError(
+            f"Merge mismatch: latent test rows={len(test_latents)} but merged rows={len(merged)}"
+        )
 
-        try:
-            crab_model = CrabNet(compute_device="cpu", verbose=False, epochs=5, batch_size=64, lr=0.001, checkin=20, save=False)
-            crab_model.fit(df_valid[["formula_T", "zT"]].rename(columns={"formula_T": "formula", "zT": "target"}).head(200),
-                           df_valid[["formula_T", "zT"]].rename(columns={"formula_T": "formula", "zT": "target"}).head(20))
-            latent = extract_latent_features(crab_model, df_valid)
-        except Exception as exc:
-            print(f"CrabNet latent extraction failed ({exc}); falling back to zeros for hybrid SHAP.")
-            latent = np.zeros((len(df_valid), latent_dim), dtype=float)
+    feature_cols = [
+        col for col in merged.columns
+        if col not in {"target", "row_id", "formula", "canonical_formula", "Temperature_K"}
+        and pd.api.types.is_numeric_dtype(merged[col])
+        and col != "sys_df_original_index"
+    ]
+    if not feature_cols:
+        raise ValueError(f"No numeric hybrid feature columns found after merge")
 
-        latent_df = pd.DataFrame(latent, columns=latent_cols)
-        hybrid_features = pd.concat([X_mat.reset_index(drop=True), latent_df], axis=1)
-        X = hybrid_features
-    except Exception as exc:
-        print(f"Hybrid SHAP fallback due to extraction issue: {exc}")
-        X = pd.concat([X_mat.reset_index(drop=True), pd.DataFrame(np.zeros((len(X_mat), latent_dim), dtype=float), columns=latent_cols)], axis=1)
+    y = merged["target"].astype(float).to_numpy()
+    X = merged[feature_cols].copy()
 
     X = X.replace([np.inf, -np.inf], np.nan).fillna(0.0)
+
     model = GradientBoostingRegressor(n_estimators=200, random_state=42)
     model.fit(X, y)
 
@@ -206,7 +216,7 @@ def build_hybrid_shap():
         "shap_bar_hybrid.png",
         "Matminer + CrabNet latent + MODNet",
     )
-    print("Saved hybrid SHAP summary and bar plots to results/figures")
+    print(f"Saved hybrid SHAP summary/bar plots using {len(merged)} merged test rows from {HYBRID_CSV}")
 
 
 if __name__ == "__main__":

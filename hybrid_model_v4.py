@@ -18,6 +18,7 @@ from typing import Optional, Tuple
 
 import numpy as np
 import pandas as pd
+import torch
 from sklearn.ensemble import HistGradientBoostingRegressor, RandomForestRegressor
 from sklearn.impute import SimpleImputer
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
@@ -48,6 +49,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--learning-rate", type=float, default=DEFAULT_LR, help="CrabNet learning rate")
     parser.add_argument("--max-folds", type=int, default=None, help="Optional limit for quick smoke tests")
     parser.add_argument("--dry-run", action="store_true", help="Load data and print the fold plan without training")
+    parser.add_argument(
+        "--allow-partial-failure",
+        action="store_true",
+        help="Allow a failed latent-extraction batch to be replaced with zeros and continue. Default is fail loudly.",
+    )
     return parser.parse_args()
 
 
@@ -101,7 +107,12 @@ def get_model(epochs: int, batch_size: int, learning_rate: float, fold_idx: int)
     )
 
 
-def extract_latent_features(crab_model, subset_df: pd.DataFrame, batch_size: int = 256) -> np.ndarray:
+def extract_latent_features(
+    crab_model,
+    subset_df: pd.DataFrame,
+    batch_size: int = 256,
+    allow_partial_failure: bool = False,
+) -> np.ndarray:
     latent_store = {}
 
     def hook_fn(module, inputs, output):
@@ -127,10 +138,25 @@ def extract_latent_features(crab_model, subset_df: pd.DataFrame, batch_size: int
             try:
                 crab_model.load_data(crab_df, train=False)
                 crab_model.predict(crab_df)
-            except Exception:
-                feat_dim = all_feats[-1].shape[1] if all_feats else 512
-                all_feats.append(np.zeros((len(batch), feat_dim), dtype=float))
-                continue
+            except Exception as exc:
+                row_ids = batch["row_id"].astype(int).tolist() if "row_id" in batch.columns else list(range(start, start + len(batch)))
+                formulas = batch["formula_T"].astype(str).tolist()
+                failure_details = "\n".join(
+                    f"  - row_id={row_id}, formula={formula}"
+                    for row_id, formula in zip(row_ids, formulas)
+                )
+                message = (
+                    f"extract_latent_features() failed for batch starting at row {start} "
+                    f"(batch size={len(batch)}).\n"
+                    f"Affected rows:\n{failure_details}\n"
+                    f"Exception: {type(exc).__name__}: {exc}"
+                )
+                if allow_partial_failure:
+                    warnings.warn(message, RuntimeWarning)
+                    feat_dim = all_feats[-1].shape[1] if all_feats else 512
+                    all_feats.append(np.zeros((len(batch), feat_dim), dtype=float))
+                    continue
+                raise RuntimeError(message) from exc
 
             if "feat" in latent_store:
                 all_feats.append(latent_store["feat"])
@@ -255,8 +281,18 @@ def main():
         except Exception as exc:
             raise RuntimeError(f"CrabNet training failed for fold {fold_idx}: {exc}") from exc
 
-        train_latent = extract_latent_features(model, train_df[["formula_T", "target", "row_id"]].copy(), batch_size=args.batch_size)
-        test_latent = extract_latent_features(model, test_df[["formula_T", "target", "row_id"]].copy(), batch_size=args.batch_size)
+        train_latent = extract_latent_features(
+            model,
+            train_df[["formula_T", "target", "row_id"]].copy(),
+            batch_size=args.batch_size,
+            allow_partial_failure=args.allow_partial_failure,
+        )
+        test_latent = extract_latent_features(
+            model,
+            test_df[["formula_T", "target", "row_id"]].copy(),
+            batch_size=args.batch_size,
+            allow_partial_failure=args.allow_partial_failure,
+        )
 
         train_latent_cols = [f"CrabLatent_{i}" for i in range(train_latent.shape[1])]
         test_latent_cols = [f"CrabLatent_{i}" for i in range(test_latent.shape[1])]

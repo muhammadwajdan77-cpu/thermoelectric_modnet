@@ -1,0 +1,647 @@
+2026-09-12 01:17:51.669381: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-09-12 01:17:51.702349: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-09-12 01:17:51.702390: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-09-12 01:17:51.703464: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-09-12 01:17:51.708794: I external/local_tsl/tsl/cuda/cudart_stub.cc:31] Could not find cuda drivers on your machine, GPU will not be used.
+2026-09-12 01:17:51.708967: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-09-12 01:17:52.409928: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/packing.py:84: UserWarning: AtomicPackingEfficiency(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/element.py:216: UserWarning: BandCenter(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:218: UserWarning: DemlData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/ion.py:161: UserWarning: IonProperty(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/alloy.py:112: UserWarning: Miedema(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/orbital.py:115: UserWarning: ValenceOrbital(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/alloy.py:501: UserWarning: YangSolidSolution(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:524: UserWarning: MixingEnthalpy(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/site/chemical.py:335: UserWarning: LocalPropertyDifference(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+FAMILY_SIZE_SUMMARY
+families=271
+min=1
+median=13.0
+mean=28.022140221402214
+max=280
+families_lt_5=54
+bucket_counts
+1-5: 72
+6-20: 96
+21-50: 60
+51+: 43
+
+THRESHOLD_COUNTS
+threshold=0.03 families=320
+threshold=0.05 families=271
+threshold=0.1 families=200
+2026-09-12 01:17:55,146 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+2026-09-12 01:17:55,164 - modnet - INFO - Multiprocessing on 1 workers.
+2026-09-12 01:17:55,165 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
+  0%|          | 0/127 [00:00<?, ?it/s]  1%|          | 1/127 [00:02<04:44,  2.25s/it] 80%|███████▉  | 101/127 [00:02<00:00, 45.57it/s]100%|██████████| 127/127 [00:02<00:00, 43.88it/s]
+2026-09-12 01:17:58,074 - modnet - INFO - Computing cross NMI between all features...
+  0%|          | 0/7503 [00:00<?, ?it/s]  0%|          | 1/7503 [00:02<5:07:25,  2.46s/it]  1%|▏         | 101/7503 [00:05<05:29, 22.48it/s]  3%|▎         | 201/7503 [00:08<04:14, 28.68it/s]  4%|▍         | 301/7503 [00:10<03:45, 31.97it/s]  5%|▌         | 401/7503 [00:13<03:31, 33.53it/s]  7%|▋         | 501/7503 [00:16<03:23, 34.44it/s]  8%|▊         | 601/7503 [00:18<03:14, 35.49it/s]  9%|▉         | 701/7503 [00:21<03:06, 36.42it/s] 11%|█         | 801/7503 [00:24<03:03, 36.54it/s] 12%|█▏        | 901/7503 [00:26<03:01, 36.43it/s] 13%|█▎        | 1001/7503 [00:29<02:58, 36.49it/s] 15%|█▍        | 1101/7503 [00:32<02:55, 36.43it/s] 16%|█▌        | 1201/7503 [00:35<02:50, 37.01it/s] 17%|█▋        | 1301/7503 [00:37<02:47, 37.11it/s] 19%|█▊        | 1401/7503 [00:40<02:42, 37.52it/s] 20%|██        | 1501/7503 [00:43<02:40, 37.45it/s] 21%|██▏       | 1601/7503 [00:45<02:40, 36.83it/s] 23%|██▎       | 1701/7503 [00:48<02:37, 36.77it/s] 24%|██▍       | 1801/7503 [00:51<02:34, 36.92it/s] 25%|██▌       | 1901/7503 [00:53<02:30, 37.20it/s] 27%|██▋       | 2001/7503 [00:56<02:27, 37.23it/s] 28%|██▊       | 2101/7503 [00:59<02:25, 37.00it/s] 29%|██▉       | 2201/7503 [01:02<02:26, 36.29it/s] 31%|███       | 2301/7503 [01:04<02:22, 36.55it/s] 32%|███▏      | 2401/7503 [01:07<02:18, 36.94it/s] 33%|███▎      | 2501/7503 [01:10<02:14, 37.21it/s] 35%|███▍      | 2601/7503 [01:12<02:11, 37.34it/s] 36%|███▌      | 2701/7503 [01:15<02:10, 36.85it/s] 37%|███▋      | 2801/7503 [01:18<02:08, 36.61it/s] 39%|███▊      | 2901/7503 [01:21<02:06, 36.32it/s] 40%|███▉      | 3001/7503 [01:24<02:05, 36.01it/s] 41%|████▏     | 3101/7503 [01:26<02:01, 36.29it/s] 43%|████▎     | 3201/7503 [01:29<01:57, 36.54it/s] 44%|████▍     | 3301/7503 [01:32<01:54, 36.82it/s] 45%|████▌     | 3401/7503 [01:34<01:52, 36.54it/s] 47%|████▋     | 3501/7503 [01:37<01:50, 36.36it/s] 48%|████▊     | 3601/7503 [01:40<01:47, 36.34it/s] 49%|████▉     | 3701/7503 [01:43<01:43, 36.81it/s] 51%|█████     | 3801/7503 [01:45<01:42, 36.28it/s] 52%|█████▏    | 3901/7503 [01:48<01:39, 36.34it/s] 53%|█████▎    | 4001/7503 [01:51<01:35, 36.54it/s] 55%|█████▍    | 4101/7503 [01:53<01:30, 37.60it/s] 56%|█████▌    | 4201/7503 [01:56<01:25, 38.41it/s] 57%|█████▋    | 4301/7503 [01:58<01:23, 38.48it/s] 59%|█████▊    | 4401/7503 [02:01<01:22, 37.77it/s] 60%|█████▉    | 4501/7503 [02:04<01:20, 37.27it/s] 61%|██████▏   | 4601/7503 [02:07<01:18, 37.18it/s] 63%|██████▎   | 4701/7503 [02:09<01:15, 37.30it/s] 64%|██████▍   | 4801/7503 [02:12<01:12, 37.22it/s] 65%|██████▌   | 4901/7503 [02:15<01:11, 36.65it/s] 67%|██████▋   | 5001/7503 [02:18<01:08, 36.58it/s] 68%|██████▊   | 5101/7503 [02:20<01:05, 36.43it/s] 69%|██████▉   | 5201/7503 [02:23<01:03, 36.09it/s] 71%|███████   | 5301/7503 [02:26<01:01, 35.67it/s] 72%|███████▏  | 5401/7503 [02:29<00:58, 36.00it/s] 73%|███████▎  | 5501/7503 [02:31<00:55, 36.34it/s] 75%|███████▍  | 5601/7503 [02:34<00:52, 36.43it/s] 76%|███████▌  | 5701/7503 [02:37<00:49, 36.48it/s] 77%|███████▋  | 5801/7503 [02:40<00:46, 36.87it/s] 79%|███████▊  | 5901/7503 [02:42<00:43, 36.79it/s] 80%|███████▉  | 6001/7503 [02:45<00:41, 36.25it/s] 81%|████████▏ | 6101/7503 [02:48<00:38, 36.33it/s] 83%|████████▎ | 6201/7503 [02:51<00:35, 36.17it/s] 84%|████████▍ | 6301/7503 [02:53<00:33, 36.15it/s] 85%|████████▌ | 6401/7503 [02:56<00:30, 36.00it/s] 87%|████████▋ | 6501/7503 [02:59<00:27, 35.95it/s] 88%|████████▊ | 6601/7503 [03:02<00:25, 36.04it/s] 89%|████████▉ | 6701/7503 [03:05<00:22, 35.90it/s] 91%|█████████ | 6801/7503 [03:07<00:19, 36.03it/s] 92%|█████████▏| 6901/7503 [03:10<00:16, 36.05it/s] 93%|█████████▎| 7001/7503 [03:13<00:14, 35.77it/s] 95%|█████████▍| 7101/7503 [03:16<00:11, 35.69it/s] 96%|█████████▌| 7201/7503 [03:18<00:08, 36.11it/s] 97%|█████████▋| 7301/7503 [03:21<00:05, 36.51it/s] 99%|█████████▊| 7401/7503 [03:24<00:02, 36.69it/s]100%|██████████| 7503/7503 [03:24<00:00, 36.70it/s]
+2026-09-12 01:21:22,553 - modnet - INFO - Starting target 1/1: target ...
+2026-09-12 01:21:22,554 - modnet - INFO - Computing mutual information between features and target...
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/modnet/preprocessing.py:151: FutureWarning: In a future version, `df.iloc[:, i] = newvals` will attempt to set the values inplace instead of always setting a new array. To retain the old behavior, use either `df[df.columns[i]] = newvals` or, if columns are non-unique, `df.isetitem(i, newvals)`
+  mutual_info.loc[:, target_name] = _mifun(df_feat, df_target[target_name], **kwargs)
+2026-09-12 01:21:30,000 - modnet - INFO - Computing optimal features...
+2026-09-12 01:21:31,982 - modnet - INFO - Done with target 1/1: target.
+2026-09-12 01:21:31,982 - modnet - INFO - Merging all features...
+2026-09-12 01:21:31,982 - modnet - INFO - Done.
+2026-09-12 01:21:32.014030: I external/local_xla/xla/stream_executor/cuda/cuda_executor.cc:901] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2026-09-12 01:21:32.014578: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2256] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/packing.py:84: UserWarning: AtomicPackingEfficiency(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/element.py:216: UserWarning: BandCenter(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:218: UserWarning: DemlData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/ion.py:161: UserWarning: IonProperty(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/alloy.py:112: UserWarning: Miedema(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/orbital.py:115: UserWarning: ValenceOrbital(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/alloy.py:501: UserWarning: YangSolidSolution(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:524: UserWarning: MixingEnthalpy(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/site/chemical.py:335: UserWarning: LocalPropertyDifference(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+2026-09-12 01:21:45,612 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+ 1/48 [..............................] - ETA: 3s48/48 [==============================] - 0s 766us/step
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/packing.py:84: UserWarning: AtomicPackingEfficiency(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/element.py:216: UserWarning: BandCenter(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:218: UserWarning: DemlData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/ion.py:161: UserWarning: IonProperty(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/alloy.py:112: UserWarning: Miedema(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/orbital.py:115: UserWarning: ValenceOrbital(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/alloy.py:501: UserWarning: YangSolidSolution(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:524: UserWarning: MixingEnthalpy(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/site/chemical.py:335: UserWarning: LocalPropertyDifference(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+
+FOLD_1_TEST_FAMILY_STATS
+        family  rows      mae     rmse
+         Pb+Te   280 0.377167 0.445050
+         Ag+Se   117 0.320778 0.373753
+       Pb+S+Se   117 0.307170 0.386037
+      Ni+Sn+Ti    89 0.115743 0.152975
+      Ag+Sb+Te    78 0.823508 1.014151
+       Co+Li+O    62 0.029353 0.030455
+       Cu+Fe+S    56 0.033136 0.036256
+       Ca+Co+O    52 0.112959 0.224358
+   Ag+Cu+Se+Te    51 0.296822 0.378768
+       Cu+S+Se    46 0.413990 0.434961
+      Ba+Ga+Sn    38 0.426169 0.465095
+      Fe+Sb+Ta    37 0.341859 0.483907
+         Nd+Te    36 0.151510 0.218772
+      Co+Ge+Te    32 0.405412 0.536621
+      Cu+Ga+Te    29 0.204137 0.236734
+      Ag+Mg+Sb    28 0.497835 0.513215
+       Ag+In+S    26 0.068626 0.076472
+   Ag+Ca+Sb+Zn    24 0.187020 0.251979
+      Ba+Ga+Ge    24 0.145695 0.215532
+       Ca+O+Ti    21 0.037743 0.058262
+      As+Se+Te    21 0.024414 0.034059
+            Te    19 0.181395 0.244691
+Ag+Sb+Se+Sn+Te    19 0.081665 0.099819
+         Ge+Mg    18 0.150239 0.186898
+   Cd+Eu+Sb+Zn    16 0.135124 0.155554
+   Ge+Pb+Se+Te    14 0.365438 0.537689
+         Pb+Se    14 0.234861 0.272775
+         Ca+Sb    12 0.057053 0.068679
+       Cu+Nd+O    12 0.018449 0.027481
+      Bi+Pb+Te    10 0.607139 0.609074
+       Co+La+O    10 0.038540 0.056051
+      Sn+Te+Tl     9 0.268510 0.294407
+       Co+Na+O     8 0.308805 0.458171
+         Bi+Sr     8 0.114068 0.147516
+    Ba+O+Sr+Ti     8 0.051909 0.080161
+         Bi+Eu     7 0.059724 0.075380
+   Cu+In+Mn+Te     6 0.146268 0.152199
+      Co+Fe+Sb     6 0.071347 0.095277
+      Cu+In+Te     6 0.046680 0.055622
+         Si+Yb     6 0.043425 0.046049
+      Bi+Si+Te     5 0.212557 0.320687
+Ag+Bi+Nb+Sb+Se     5 0.058953 0.075389
+   Ag+Cs+Sm+Te     5 0.004418 0.005096
+         Ge+Si     4 0.407440 0.481102
+ Ba+Bi+Co+O+Ru     4 0.154749 0.156044
+      La+Sb+Te     4 0.139282 0.211662
+   Fe+Nb+Sb+Ti     4 0.034289 0.048048
+    Ca+Mn+O+Tb     4 0.010058 0.013477
+      Ag+Te+Tl     3 0.376990 0.385314
+         Co+Si     3 0.102798 0.104675
+       S+Sn+Ti     3 0.092739 0.131551
+       Bi+K+Se     1 0.182159 0.182159
+ Ba+Bi+Cu+O+Se     1 0.124594 0.124594
+    Ba+Co+O+Tm     1 0.005901 0.005901
+
+FOLD_1_TOP_WORST_FAMILIES
+     family  rows      mae     rmse  target_mean  pred_mean
+   Ag+Sb+Te    78 0.823508 1.014151     0.989179   0.166762
+   Bi+Pb+Te    10 0.607139 0.609074     0.270600   0.877739
+   Ag+Mg+Sb    28 0.497835 0.513215     0.718943   0.221107
+   Ba+Ga+Sn    38 0.426169 0.465095     0.666772   0.240604
+    Cu+S+Se    46 0.413990 0.434961     0.335800   0.749790
+      Ge+Si     4 0.407440 0.481102     0.448062   0.040623
+   Co+Ge+Te    32 0.405412 0.536621     0.078627   0.484039
+      Pb+Te   280 0.377167 0.445050     0.631172   0.587917
+   Ag+Te+Tl     3 0.376990 0.385314     0.538617   0.739241
+Ge+Pb+Se+Te    14 0.365438 0.537689     0.480546   0.172618
+
+FOLD1_WORST_FAMILY_COMPOSITION_DETAILS
+family=Ag+Sb+Te rows=78 family_mae=0.823508 target_mean=0.989179 pred_mean=0.166762
+formulas=['AgSbTe2', 'AgSbTe2', 'AgSbTe2', 'AgSbTe2', 'AgSbTe2', 'AgSbTe2', 'AgSbTe2', 'AgSbTe2', 'AgSbTe2', 'AgSbTe2']
+target_min=0.080613 target_max=2.538800
+training_rows_same_family=0
+training_formula_examples=none
+family=Bi+Pb+Te rows=10 family_mae=0.607139 target_mean=0.270600 pred_mean=0.877739
+formulas=['PbBi4Te7', 'PbBi4Te7', 'PbBi4Te7', 'PbBi4Te7', 'PbBi4Te7', 'PbBi4Te7', 'PbBi4Te7', 'PbBi4Te7', 'PbBi4Te7', 'PbBi4Te7']
+target_min=0.096000 target_max=0.390000
+training_rows_same_family=0
+training_formula_examples=none
+family=Ag+Mg+Sb rows=28 family_mae=0.497835 target_mean=0.718943 pred_mean=0.221107
+formulas=['MgAgSb', 'MgAgSb', 'MgAgSb', 'MgAgSb', 'MgAgSb', 'MgAgSb', 'MgAgSb0.985In0.015', 'MgAgSb0.985In0.015', 'MgAgSb0.985In0.015', 'MgAgSb0.985In0.015']
+target_min=0.415794 target_max=1.025968
+training_rows_same_family=0
+training_formula_examples=none
+
+FOLD_1_TRAIN_FAMILY_COUNTS_SAMPLE
+Ge+Te         266
+Cu+Se         263
+Bi+Cu+O+Se    236
+Co+Sb         233
+Sn+Te         209
+Se+Sn         196
+Bi+Mg+Sb      175
+Cu+Sb+Se      145
+Mg+Sb         110
+Ag+Bi+Se      102
+O+Zn           99
+Cu+S+Sb        90
+Cu+S+Sn        82
+Co+Nb+Sn       82
+O+Sr+Ti        80
+Bi+Te          80
+Ca+Mn+O        78
+Sb+Yb          70
+Ge+Se+Te       67
+Cu+S           64
+2026-09-12 01:21:46,309 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+2026-09-12 01:21:46,331 - modnet - INFO - Multiprocessing on 1 workers.
+2026-09-12 01:21:46,331 - modnet - INFO - Computing "self" MI (i.e. information entropy) of features
+  0%|          | 0/128 [00:00<?, ?it/s]  1%|          | 1/128 [00:02<05:43,  2.70s/it] 79%|███████▉  | 101/128 [00:03<00:00, 38.16it/s]100%|██████████| 128/128 [00:03<00:00, 37.06it/s]
+2026-09-12 01:21:49,792 - modnet - INFO - Computing cross NMI between all features...
+  0%|          | 0/7626 [00:00<?, ?it/s]  0%|          | 1/7626 [00:02<6:02:01,  2.85s/it]  1%|▏         | 101/7626 [00:05<06:04, 20.64it/s]  3%|▎         | 201/7626 [00:08<04:41, 26.42it/s]  4%|▍         | 301/7626 [00:11<04:05, 29.83it/s]  5%|▌         | 401/7626 [00:14<03:46, 31.88it/s]  7%|▋         | 501/7626 [00:17<03:34, 33.18it/s]  8%|▊         | 601/7626 [00:19<03:26, 34.09it/s]  9%|▉         | 701/7626 [00:22<03:18, 34.83it/s] 11%|█         | 801/7626 [00:25<03:14, 35.05it/s] 12%|█▏        | 901/7626 [00:28<03:11, 35.17it/s] 13%|█▎        | 1001/7626 [00:31<03:08, 35.15it/s] 14%|█▍        | 1101/7626 [00:34<03:08, 34.64it/s] 16%|█▌        | 1201/7626 [00:37<03:04, 34.89it/s] 17%|█▋        | 1301/7626 [00:39<03:00, 35.14it/s] 18%|█▊        | 1401/7626 [00:42<02:55, 35.45it/s] 20%|█▉        | 1501/7626 [00:45<02:51, 35.62it/s] 21%|██        | 1601/7626 [00:48<02:49, 35.61it/s] 22%|██▏       | 1701/7626 [00:50<02:46, 35.59it/s] 24%|██▎       | 1801/7626 [00:53<02:44, 35.46it/s] 25%|██▍       | 1901/7626 [00:56<02:42, 35.32it/s] 26%|██▌       | 2001/7626 [00:59<02:38, 35.57it/s] 28%|██▊       | 2101/7626 [01:02<02:37, 35.14it/s] 29%|██▉       | 2201/7626 [01:05<02:34, 35.02it/s] 30%|███       | 2301/7626 [01:08<02:35, 34.31it/s] 31%|███▏      | 2401/7626 [01:11<02:30, 34.67it/s] 33%|███▎      | 2501/7626 [01:13<02:26, 35.03it/s] 34%|███▍      | 2601/7626 [01:16<02:20, 35.69it/s] 35%|███▌      | 2701/7626 [01:19<02:17, 35.79it/s] 37%|███▋      | 2801/7626 [01:22<02:15, 35.54it/s] 38%|███▊      | 2901/7626 [01:25<02:13, 35.52it/s] 39%|███▉      | 3001/7626 [01:27<02:11, 35.19it/s] 41%|████      | 3101/7626 [01:30<02:08, 35.29it/s] 42%|████▏     | 3201/7626 [01:33<02:05, 35.20it/s] 43%|████▎     | 3301/7626 [01:36<02:01, 35.53it/s] 45%|████▍     | 3401/7626 [01:39<01:59, 35.41it/s] 46%|████▌     | 3501/7626 [01:42<01:56, 35.31it/s] 47%|████▋     | 3601/7626 [01:44<01:55, 34.95it/s] 49%|████▊     | 3701/7626 [01:47<01:51, 35.08it/s] 50%|████▉     | 3801/7626 [01:50<01:48, 35.11it/s] 51%|█████     | 3901/7626 [01:54<01:53, 32.89it/s] 52%|█████▏    | 4001/7626 [01:57<01:52, 32.18it/s] 54%|█████▍    | 4101/7626 [02:00<01:50, 32.00it/s] 55%|█████▌    | 4201/7626 [02:03<01:48, 31.49it/s] 56%|█████▋    | 4301/7626 [02:07<01:45, 31.52it/s] 58%|█████▊    | 4401/7626 [02:10<01:42, 31.39it/s] 59%|█████▉    | 4501/7626 [02:13<01:40, 31.05it/s] 60%|██████    | 4601/7626 [02:16<01:37, 30.97it/s] 62%|██████▏   | 4701/7626 [02:20<01:34, 30.96it/s] 63%|██████▎   | 4801/7626 [02:23<01:31, 30.87it/s] 64%|██████▍   | 4901/7626 [02:26<01:28, 30.68it/s] 66%|██████▌   | 5001/7626 [02:30<01:26, 30.29it/s] 67%|██████▋   | 5101/7626 [02:33<01:23, 30.37it/s] 68%|██████▊   | 5201/7626 [02:36<01:20, 30.11it/s] 70%|██████▉   | 5301/7626 [02:40<01:17, 30.03it/s] 71%|███████   | 5401/7626 [02:43<01:13, 30.15it/s] 72%|███████▏  | 5501/7626 [02:46<01:09, 30.62it/s] 73%|███████▎  | 5601/7626 [02:49<01:05, 30.84it/s] 75%|███████▍  | 5701/7626 [02:52<01:02, 30.69it/s] 76%|███████▌  | 5801/7626 [02:56<00:59, 30.71it/s] 77%|███████▋  | 5901/7626 [02:59<00:55, 31.02it/s] 79%|███████▊  | 6001/7626 [03:02<00:51, 31.47it/s] 80%|████████  | 6101/7626 [03:05<00:47, 32.07it/s] 81%|████████▏ | 6201/7626 [03:08<00:45, 31.63it/s] 83%|████████▎ | 6301/7626 [03:11<00:41, 31.97it/s] 84%|████████▍ | 6401/7626 [03:14<00:37, 32.32it/s] 85%|████████▌ | 6501/7626 [03:17<00:34, 32.54it/s] 87%|████████▋ | 6601/7626 [03:20<00:32, 31.98it/s] 88%|████████▊ | 6701/7626 [03:24<00:29, 31.32it/s] 89%|████████▉ | 6801/7626 [03:27<00:26, 30.93it/s] 90%|█████████ | 6901/7626 [03:30<00:23, 30.79it/s] 92%|█████████▏| 7001/7626 [03:34<00:20, 30.46it/s] 93%|█████████▎| 7101/7626 [03:37<00:17, 30.18it/s] 94%|█████████▍| 7201/7626 [03:41<00:14, 29.80it/s] 96%|█████████▌| 7301/7626 [03:44<00:10, 30.19it/s] 97%|█████████▋| 7401/7626 [03:47<00:07, 30.32it/s] 98%|█████████▊| 7501/7626 [03:51<00:04, 29.94it/s]100%|█████████▉| 7601/7626 [03:51<00:00, 38.34it/s]100%|██████████| 7626/7626 [03:51<00:00, 32.88it/s]
+2026-09-12 01:25:41,817 - modnet - INFO - Starting target 1/1: target ...
+2026-09-12 01:25:41,817 - modnet - INFO - Computing mutual information between features and target...
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/modnet/preprocessing.py:151: FutureWarning: In a future version, `df.iloc[:, i] = newvals` will attempt to set the values inplace instead of always setting a new array. To retain the old behavior, use either `df[df.columns[i]] = newvals` or, if columns are non-unique, `df.isetitem(i, newvals)`
+  mutual_info.loc[:, target_name] = _mifun(df_feat, df_target[target_name], **kwargs)
+2026-09-12 01:25:50,728 - modnet - INFO - Computing optimal features...
+2026-09-12 01:25:53,249 - modnet - INFO - Done with target 1/1: target.
+2026-09-12 01:25:53,249 - modnet - INFO - Merging all features...
+2026-09-12 01:25:53,249 - modnet - INFO - Done.
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/packing.py:84: UserWarning: AtomicPackingEfficiency(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/element.py:216: UserWarning: BandCenter(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:218: UserWarning: DemlData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/ion.py:161: UserWarning: IonProperty(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/alloy.py:112: UserWarning: Miedema(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/orbital.py:115: UserWarning: ValenceOrbital(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/composition/alloy.py:501: UserWarning: YangSolidSolution(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:524: UserWarning: MixingEnthalpy(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/utils/data.py:326: UserWarning: MagpieData(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+/home/wajdan/miniconda3/envs/sysTEm_localenv/lib/python3.10/site-packages/matminer/featurizers/site/chemical.py:335: UserWarning: LocalPropertyDifference(impute_nan=False):
+In a future release, impute_nan will be set to True by default.
+                    This means that features that are missing or are NaNs for elements
+                    from the data source will be replaced by the average of that value
+                    over the available elements.
+                    This avoids NaNs after featurization that are often replaced by
+                    dataset-dependent averages.
+  warnings.warn(f"{self.__class__.__name__}(impute_nan=False):\n" + IMPUTE_NAN_WARNING)
+2026-09-12 01:26:08,949 - modnet - INFO - Loaded Matminer2023Featurizer featurizer.
+ 1/48 [..............................] - ETA: 2s32/48 [===================>..........] - ETA: 0s48/48 [==============================] - 0s 1ms/step
+
+FOLD_2_TEST_FAMILY_STATS
+          family  rows      mae     rmse
+           Ge+Te   266 0.382479 0.506584
+        Cu+Sb+Se   145 0.156256 0.205924
+           Mg+Sb   110 0.212250 0.278601
+         Cu+S+Sn    82 0.098881 0.137655
+         Ca+Mn+O    78 0.073483 0.120370
+        Bi+Ge+Te    60 0.634708 0.737771
+     Ba+Cu+Ge+Si    57 0.100202 0.109030
+        Bi+Sb+Se    53 0.176669 0.216269
+        Ca+Sb+Yb    51 0.206949 0.301110
+        Ge+Pb+Te    45 0.579576 0.652417
+        Bi+Se+Te    41 0.234180 0.257810
+        Ni+Sn+Zr    36 0.140113 0.186119
+     Cd+Cu+Se+Sn    36 0.073004 0.104729
+       Cu+P+S+Se    30 0.272195 0.329260
+        Ag+Mo+Se    30 0.189831 0.210208
+     Bi+Pb+Se+Te    28 0.107171 0.128198
+        Ca+Ga+Sb    26 0.195596 0.209164
+     Bi+Ge+Sn+Te    24 0.163537 0.277606
+     Bi+Sb+Se+Te    24 0.154131 0.186942
+           Sb+Zn    21 0.236170 0.312144
+        Ag+Cu+Se    20 0.311025 0.404239
+        Ge+Sn+Te    20 0.268738 0.294616
+           Fe+Se    19 0.316121 0.359256
+    Bi+Cu+O+Se+Y    18 0.636900 0.684915
+  Hf+Ni+Sn+Ti+Zr    15 0.231933 0.318087
+         Cu+Ge+S    15 0.173163 0.188631
+         Bi+O+Se    13 0.239612 0.257371
+        Co+Sb+Te    13 0.099425 0.105328
+         Cu+In+S    12 0.015950 0.016935
+Ag+S+Sb+Se+Sn+Te    10 0.101806 0.125656
+  Cu+Fe+Se+Sn+Zn    10 0.054332 0.074032
+        Cu+Te+Tm     9 0.112490 0.130099
+        Pb+Se+Te     8 0.247694 0.299432
+           Bi+Yb     8 0.079202 0.087914
+        Pb+Te+Tl     7 0.494314 0.506935
+        Mn+Sn+Te     7 0.156004 0.189141
+      Ca+La+O+Ti     7 0.044500 0.062659
+     Ag+Bi+Nb+Se     6 0.133894 0.168193
+     Ag+Cs+Tb+Te     6 0.009812 0.011000
+         Cu+P+Se     5 0.148609 0.168414
+        Ge+Te+Tl     5 0.145274 0.187168
+      Cu+Ni+S+Sb     5 0.070077 0.080551
+     Cu+Fe+Se+Sn     5 0.038503 0.054065
+     Ag+Cs+Pr+Te     5 0.020135 0.022320
+     Ca+Ge+Sb+Yb     4 0.115057 0.117938
+        Al+Ba+Si     4 0.111673 0.114166
+       Ca+Mn+O+Y     4 0.086654 0.096895
+         Cr+Mo+S     4 0.037822 0.045952
+     Cu+Hg+Se+Sn     3 0.063065 0.069415
+     Co+Fe+La+Sb     3 0.055192 0.062769
+      Ba+Cu+S+Te     2 0.125966 0.127018
+      Ca+Mn+O+Sm     2 0.003447 0.003654
+   Co+Fe+La+Ni+O     1 0.016004 0.016004
+      Ba+Co+Ho+O     1 0.001922 0.001922
+
+FOLD_2_TOP_WORST_FAMILIES
+      family  rows      mae     rmse  target_mean  pred_mean
+Bi+Cu+O+Se+Y    18 0.636900 0.684915     0.016391   0.653291
+    Bi+Ge+Te    60 0.634708 0.737771     1.171000   0.562034
+    Ge+Pb+Te    45 0.579576 0.652417     0.434590   0.887422
+    Pb+Te+Tl     7 0.494314 0.506935     0.322456   0.816770
+       Ge+Te   266 0.382479 0.506584     0.723527   0.464915
+       Fe+Se    19 0.316121 0.359256     0.045105   0.361226
+    Ag+Cu+Se    20 0.311025 0.404239     0.399018   0.437454
+   Cu+P+S+Se    30 0.272195 0.329260     0.321725   0.049890
+    Ge+Sn+Te    20 0.268738 0.294616     0.393494   0.662232
+    Pb+Se+Te     8 0.247694 0.299432     0.858807   0.792927
+
+FOLD_2_TRAIN_FAMILY_COUNTS_SAMPLE
+Pb+Te         280
+Cu+Se         263
+Bi+Cu+O+Se    236
+Co+Sb         233
+Sn+Te         209
+Se+Sn         196
+Bi+Mg+Sb      175
+Pb+S+Se       117
+Ag+Se         117
+Ag+Bi+Se      102
+O+Zn           99
+Cu+S+Sb        90
+Ni+Sn+Ti       89
+Co+Nb+Sn       82
+O+Sr+Ti        80
+Bi+Te          80
+Ag+Sb+Te       78
+Sb+Yb          70
+Ge+Se+Te       67
+Cu+S           64
+
+SCRIPT_DONE
