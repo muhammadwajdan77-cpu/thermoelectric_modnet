@@ -19,7 +19,6 @@ This repository contains the trimmed, verified experiment workflow and final rep
 - `results/final/CRABNET_CONTINUOUS_RESULTS.csv`
 - `results/final/CRABNET_CONTINUOUS_V2_RESULTS.csv`
 - `results/final/TASK2_HYBRID_V4_RESULTS.csv`
-- `results/final/TASK2_HYBRID_V4_FOLD_LATENTS.csv`
 - `results/final/TASK3_MATMINE_STRUCTURE_FEATURES_FULL.csv`
 - `results/final/TASK3_PART2_N965_FOLDS.csv`
 - `results/final/TASK3_PART2_N965_PERMUTATION.csv`
@@ -58,7 +57,8 @@ Rogério's review covered four real issues. The current authoritative outputs ar
    - `crabnet_.py` was the standard installed package, not a missing custom wrapper; it is now version-pinned to avoid this confusion.
    - Row-order preservation in `extract_latent_features()` was verified end-to-end, and the silent zero-fallback was removed in favor of fail-loud behavior (it never fired in the reported results).
    - SHAP analysis was rerun on the correctly trained model.
-   - Authoritative results: `results/final/TASK2_HYBRID_V4_RESULTS.csv` and `results/final/TASK2_HYBRID_V4_FOLD_LATENTS.csv`
+   - Authoritative aggregate result: `results/final/TASK2_HYBRID_V4_RESULTS.csv`
+   - The per-fold latent export is intentionally excluded from git because it is a large regenerable intermediate; recreate it locally with `python hybrid_model_v4.py` if needed.
 
 4. Structure comparison
    - The structure features were regenerated using MODNet's proper structure featurizer, yielding 1768 features rather than the stale 13-feature output.
@@ -69,6 +69,14 @@ Rogério's review covered four real issues. The current authoritative outputs ar
 The current authoritative artifacts live under `results/final/`. Stale and superseded outputs were archived under `archive/superseded_2026_09_21/` so the active repository remains reproducible and traceable.
 
 ## How to use
+
+Clone with submodules initialized:
+
+```bash
+git clone --recurse-submodules https://github.com/muhammadwajdan77-cpu/thermoelectric_modnet.git
+# or, if already cloned without --recurse-submodules:
+git submodule update --init --recursive
+```
 
 Install dependencies with:
 
